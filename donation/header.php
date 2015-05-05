@@ -11,7 +11,7 @@
 <body <?php body_class(); ?> >
 
 	<!-- Header Top -->
-	<header class="top cf">
+	<header id="Haut" class="top cf">
 		<div class="center">
 			<div class="tel"><?php echo ale_get_option('headerphone1'); ?> <span><?php echo ale_get_option('headerphone2'); ?></span></div>
 

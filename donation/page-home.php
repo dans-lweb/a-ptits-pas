@@ -251,11 +251,7 @@ get_header(); ?>
 						<a  target=blank href="http://www.lactalis.fr"><img class="lactalis"alt="lactalis" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/logo-lactalis.png"></a>
 					</div>
 				</div>
-				<div class="col-2i">
-					<div class="partner-logo">
-						<a  target=blank href="http://www.nestle.fr"><img class="nestle"alt="nestle" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/logo-nestle.png"></a>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -290,17 +286,20 @@ get_header(); ?>
 		<!-- About and Gallery -->
 		<section class="news">
 			<div class="center cf">
-				
-				<div class="col-6 about">
+				<div class="col-4 about">
 					<h3><?php echo ale_get_meta('aboutustitle'); ?></h3>
-					<?php if(ale_get_meta('aboutusimage')): ?>
-						<img src="<?php echo ale_get_meta('aboutusimage'); ?>" alt=""/>
-					<?php else: echo '<img src="http://placehold.it/525x196/f2f2f2/414141" alt>'; endif; ?>
 					<p>
 						<?php echo ale_get_meta('aboutustext'); ?>
 					</p>
 				</div>
-				<div class="col-3 photos">
+				<div class="col-4 about">
+					
+					<?php if(ale_get_meta('aboutusimage')): ?>
+						<img src="<?php echo ale_get_meta('aboutusimage'); ?>" alt=""/>
+					<?php else: echo '<img src="http://placehold.it/525x196/f2f2f2/414141" alt>'; endif; ?>
+					
+				</div>
+				<div class="col-4 photos">
 					<h3>
 						<?php echo ale_get_meta('photostitle'); ?>
 						<span class="control">

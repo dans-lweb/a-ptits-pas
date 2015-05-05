@@ -14,11 +14,9 @@
                     ));
                 }
                 ?>
-                <?php if (ale_get_option('copyrights')) : ?>
-                    <div class="copy"><?php echo ale_get_option('copyrights'); ?></div>
-                <?php else: ?>
-                    <div class="copy">© <?php _e('2014  All rights reserved.','aletheme'); ?> <span><?php echo bloginfo('name'); ?></span> </div>
-                <?php endif; ?>
+                <div class="col-6 haut_page"> <a href="#Haut">Haut de page</a></div>
+                <div class="copy">Tous droits réservés <a class="danslweb" href="http://www.dans-lweb.fr"> Il était une fois dans l'web </a></div>
+            
             </div>
         </div>
 
@@ -54,13 +52,14 @@
                 <div class="col-4 contacts">
                     <h3><?php echo ale_get_option('footercontacttitle'); ?></h3>
                     <div class="phone"><span class="fa fa-mobile"></span><span><?php echo ale_get_option('footercontacthone1'); ?></span> <?php echo ale_get_option('footercontacthone2'); ?></div>
-                    <div class="adress">
+                    
+                    <div class="email"><span class="fa fa-envelope-o"></span><?php echo ale_get_option('footercontactemail'); ?></div>
+					<div class="adress">
                         <span class="fa fa-globe"></span>
                         <span><?php echo ale_get_option('footercontactaddress1'); ?></span><br>
                         <?php echo ale_get_option('footercontactaddress2'); ?>
                     </div>
-                    <div class="email"><span class="fa fa-envelope"></span><?php echo ale_get_option('footercontactemail'); ?></div>
-                </div>
+				</div>
                 <?php if(ale_get_option('footer_info')):?>
                     <div class="footer-info col-12">
                         <?php echo ale_get_option('footer_info'); ?>
