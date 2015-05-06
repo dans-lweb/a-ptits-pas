@@ -41,14 +41,14 @@ get_header(); ?>
 		<section class="info">
 			<div class="center cf">
 				<div class="col-4 ">
-					<img src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_bebe.png">
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_bebe.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle1'); ?></h3>
 						<p><?php echo ale_get_meta('infotext1'); ?></p>
 					</div>
 				</div>
 				<div class="col-4">
-					<img src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_plus.png">
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_famille.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle2'); ?></h3>
 						<p><?php echo ale_get_meta('infotext2'); ?></p>
@@ -56,7 +56,7 @@ get_header(); ?>
 
 				</div>
 				<div class="col-4">
-					<span class="icon fa fa-plus"></span>
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_plus.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle3'); ?></h3>
 						<p><?php echo ale_get_meta('infotext3'); ?></p>

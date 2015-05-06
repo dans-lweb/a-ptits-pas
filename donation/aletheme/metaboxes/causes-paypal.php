@@ -12,12 +12,12 @@ function ale_payment_meta_box( $post ){ ?>
     <thead>
         <td><strong><?php _e('ID','aletheme');?></strong></td>
         <td><strong><?php _e('Date','aletheme');?></strong></td>
-        <td><strong><?php _e('First Name','aletheme');?></strong></td>
-        <td><strong><?php _e('Last Name','aletheme');?></strong></td>
-        <td><strong><?php _e('Payer Email','aletheme');?></strong></td>
-        <td><strong><?php _e('Status','aletheme');?></strong></td>
-        <td><strong><?php _e('Amount','aletheme');?></strong></td>
-        <td><strong><?php _e('Currency','aletheme');?></strong></td>
+        <td><strong><?php _e('Prenom','aletheme');?></strong></td>
+        <td><strong><?php _e('Nom','aletheme');?></strong></td>
+        <td><strong><?php _e('Email','aletheme');?></strong></td>
+        <td><strong><?php _e('Statut','aletheme');?></strong></td>
+        <td><strong><?php _e('Montant','aletheme');?></strong></td>
+        <td><strong><?php _e('Monnaie','aletheme');?></strong></td>
     </thead>
     <?php $metacust = get_post_meta($post->ID, 'ale_paypal_details', true);
 

@@ -4,7 +4,7 @@
 	<section class="top-page-nav">
 		<div class="center cf">
 
-			<h2><?php _e('Blog', 'aletheme'); ?></h2>
+			<h2><?php _e('Projet', 'aletheme'); ?></h2>
 
 			<?php echo get_breadcrumbs(); ?>
 
@@ -25,18 +25,18 @@
 
 					<div class="information clearfix">
 						<div class="author">
-							<span><?php _e('By', 'aletheme'); ?>:</span>
+							<span><?php _e('Par', 'aletheme'); ?>:</span>
 							<?php the_author(); ?>
 						</div>
 
 						<div class="tags">
-							<span><?php _e('Tagged', 'aletheme'); ?>:</span>
+							<span><?php _e('Tag', 'aletheme'); ?>:</span>
 							<?php the_tags('',', '); ?>
 						</div>
 
 						<div class="date">
 							<span class="fa fa-calendar"></span>
-							<?php the_time('F j, Y'); ?>
+							<?php the_time('j F Y'); ?>
 						</div>
 					</div>
 
@@ -59,21 +59,21 @@
 						<?php if(ale_get_meta('causesdonated')): ?>
 							<div class="item">
 								<span class="value"><?php echo ale_get_meta('causesdonated'); ?></span>
-								<span class="description"><?php _e('Donated', 'aletheme'); ?></span>
+								<span class="description"><?php _e('Dons', 'aletheme'); ?></span>
 							</div>
 						<?php endif; ?>
 
 						<?php if(ale_get_meta('causesdonors')): ?>
 							<div class="item donors">
 								<span class="value"><?php echo ale_get_meta('causesdonors'); ?></span>
-								<span class="description"><?php _e('Donors', 'aletheme'); ?></span>
+								<span class="description"><?php _e('Donneurs', 'aletheme'); ?></span>
 							</div>
 						<?php endif; ?>
 
 						<?php if(ale_get_meta('causesgoal')): ?>
 							<div class="item">
-								<span class="value"><?php echo ale_get_option('currencycurrent') . ' '. ale_get_meta('causesgoal'); ?></span>
-								<span class="description"><?php _e('Goal', 'aletheme'); ?></span>
+								<span class="value"><?php echo ale_get_option('causesgoal') . ' '. ale_get_meta('currencycurrent'); ?></span>
+								<span class="description"><?php _e('But', 'aletheme'); ?></span>
 							</div>
 						<?php endif; ?>
 					</div>
@@ -88,7 +88,7 @@
 					if (($payments_enabled == "1") && (!empty($paypal_merchant_id)) && (!empty($currency_code))) {
 						$payment_status = ale_get_meta('payment_status', true, $post->ID);
 							?>
-							<span class="button-donate"><?php _e('Donate', 'aletheme'); ?></span>
+							<span class="button-donate"><?php _e('Donner', 'aletheme'); ?></span>
 							<div class="donation-amount-block clearfix <?php if(isset($payment_amount)&&!empty($payment_amount)){echo 'visible';} ?>">
 								<script src="<?php echo get_template_directory_uri() . "/js/libs/paypal-button.min.js?merchant=$paypal_merchant_id"; ?>"
 									<?php if ($enable_sandbox == "1"){ ?>
@@ -115,13 +115,13 @@
 						echo '<div class="donors-list"><ul>';
 							foreach ($donor_list as $pp_stat){
 								if($pp_stat['ale_payment_status']=='Completed') {?>
-									<li>
-										<span> <?php _e('Date', 'aletheme'); ?>: <?php echo $pp_stat['ale_payment_date'] ?></span>
+									<!--<li>
+										 <span> <?php _e('Date', 'aletheme'); ?>: <?php echo $pp_stat['ale_payment_date'] ?></span>
 										<span> <?php _e('Name', 'aletheme'); ?>: <?php echo $pp_stat['ale_first_name']; ?></span>
 										<span> <?php _e('Surname', 'aletheme'); ?>: <?php echo $pp_stat['ale_last_name']; ?></span>
 										<span> <?php _e('Offered', 'aletheme'); ?>: <?php echo $pp_stat['ale_payment_gross']; ?></span>
-										<span> <?php _e('in', 'aletheme'); ?> <?php echo $pp_stat['ale_mc_currency']; ?></span>
-									</li>
+										<span> <?php _e('in', 'aletheme'); ?> <?php echo $pp_stat['ale_mc_currency']; ?></span>  
+									</li>-->
 								<?php } ?>
 							<?php } 
 						echo "</ul></div>";

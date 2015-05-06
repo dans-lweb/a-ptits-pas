@@ -3571,7 +3571,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'donate_metabox',
-		'title'      => 'Donate Options',
+		'title'      => 'Options Dons en ligne',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3579,64 +3579,64 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-donate.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Display or hide Boxes on Donate page',
+				'name' => 'Montrer ou cacher les boites de dialogues',
 				'desc' => '',
 				'id'   => $prefix . 'display',
 				'type'    => 'title',
 			),
 			array(
-				'name' => 'Show The "Text line" Box?',
-				'desc' => 'Select enable to show the "Text line" box',
+				'name' => 'Montrer boite texte introductif?',
+				'desc' => '',
 				'id'   => $prefix . 'textlinedon',
 				'std'  => 'on',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => 'Enable', 'value' => 'on', ),
-					array( 'name' => 'Disable', 'value' => 'off', ),
+					array( 'name' => 'Activer', 'value' => 'on', ),
+					array( 'name' => 'Desactiver', 'value' => 'off', ),
 				),
 			),
 			array(
-				'name' => 'Show The Donate Box?',
-				'desc' => 'Select enable to show the Slider box',
+				'name' => 'Montrer boite de donation?',
+				'desc' => '',
 				'id'   => $prefix . 'donatedon',
 				'std'  => 'on',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => 'Enable', 'value' => 'on', ),
-					array( 'name' => 'Disable', 'value' => 'off', ),
+					array( 'name' => 'Activer', 'value' => 'on', ),
+					array( 'name' => 'Desactiver', 'value' => 'off', ),
 				),
 			),
 			array(
-				'name' => 'Show The "Our Cause" Box?',
-				'desc' => 'Select enable to show the "Our Cause" box',
+				'name' => 'Montrer boite "notre cause"?',
+				'desc' => '',
 				'id'   => $prefix . 'ourcausedon',
 				'std'  => 'on',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => 'Enable', 'value' => 'on', ),
-					array( 'name' => 'Disable', 'value' => 'off', ),
+					array( 'name' => 'Activer', 'value' => 'on', ),
+					array( 'name' => 'Desactiver', 'value' => 'off', ),
 				),
 			),
 			array(
-				'name' => 'Show The "Donate text" Box?',
-				'desc' => 'Select enable to show the "Donate text" box',
+				'name' => 'Montrer la boite de texte de donation?',
+				'desc' => '',
 				'id'   => $prefix . 'donatetextdon',
 				'std'  => 'on',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => 'Enable', 'value' => 'on', ),
-					array( 'name' => 'Disable', 'value' => 'off', ),
+					array( 'name' => 'Activer', 'value' => 'on', ),
+					array( 'name' => 'Desactiver', 'value' => 'off', ),
 				),
 			),
 			array(
-				'name' => 'Text line',
+				'name' => 'Texte introductif',
 				'desc' => '',
 				'id'   => $prefix . 'donatetextline',
 				'type'    => 'title',
 			),
 			array(
-				'name' => 'Text',
-				'desc' => 'Insert the text',
+				'name' => 'Texte',
+				'desc' => 'Insérer le texte',
 				'id'   => $prefix . 'donatetext',
 				'std'  => 'Aenean vitae condimentum velit. Praesent dapibus euismod accumsan. Sed ut ante leo. Maecenas conidime etum pretium odio at porta. Pellentesque et tellus odio. Quisqu es lorem ipsum dolor sit amet vivamus egestas vestibulum id arcu sapien praesent dapibus euismod accumsan. Sed ut ante leo maecenas conidime',
 				'type' => 'textarea',
@@ -3648,177 +3648,177 @@ function aletheme_metaboxes($meta_boxes) {
 				'type'    => 'title',
 			),
 			array(
-				'name' => 'The required amount',
-				'desc' => 'Insert the amount. Example: 100.000',
+				'name' => 'Montant requis',
+				'desc' => 'Inserer le montant. Exemple: 100.000',
 				'id'   => $prefix . 'donationreqam',
 				'std' => '100.000',
 				'type'    => 'text',
 			),
 			array(
-				'name' => 'The amount collected',
-				'desc' => 'Insert the amount. Example: 70.000',
+				'name' => 'Montant acquis',
+				'desc' => 'Inserer le montant. Exemple: 70.000',
 				'id'   => $prefix . 'donationcollam',
 				'std' => '70.000',
 				'type'    => 'text',
 			),
 			array(
-				'name' => 'Currency',
-				'desc' => 'Insert the currency. Example: £',
+				'name' => 'Monnaie',
+				'desc' => 'Inserer la monnaie. Example: €',
 				'id'   => $prefix . 'currency',
-				'std' => '£',
+				'std' => '€',
 				'type'    => 'text',
 			),
 			array(
-				'name' => 'Our Cause',
+				'name' => 'Notre cause',
 				'desc' => '',
 				'id'   => $prefix . 'donateourcause',
 				'type'    => 'title',
 			),
 			array(
-				'name' => 'Title',
-				'desc' => 'Insert the title',
+				'name' => 'Titre',
+				'desc' => 'Inserer le titre',
 				'id'   => $prefix . 'donatetitle',
 				'std'  => 'Our Cause',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№1 Image',
-				'desc' => 'Upload an image. Size: 330x194',
+				'name' => 'Image №1 ',
+				'desc' => 'Charger une image. Taille: 330x194',
 				'id'   => $prefix . 'donateimage1',
 				'type' => 'file',
 			),
 			array(
-				'name' => '№1 Title',
-				'desc' => 'Insert the title',
+				'name' => 'Titre №1',
+				'desc' => 'Inserer le titre',
 				'id'   => $prefix . 'donatetitle1',
 				'std'  => 'Cults and alternative religions',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№1 Percent',
-				'desc' => 'Insert the pecent. Example: 88%',
+				'name' => 'Pourcentage №1',
+				'desc' => 'Inserer le pourcentage. Exemple: 88%',
 				'id'   => $prefix . 'donatepercent1',
 				'std'  => '88%',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№1 Raised',
-				'desc' => 'Insert the raised. Example: $2,200',
+				'name' => 'Montant acquis №1',
+				'desc' => 'Inserer le montant acquis. Exemple: 2,200€',
 				'id'   => $prefix . 'donateraised1',
-				'std'  => '$2,200',
+				'std'  => '2,200€',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№1 Donors',
-				'desc' => 'Insert the donors. Examle: 5',
+				'name' => 'Nbr donneurs №1',
+				'desc' => 'Exemle: 5',
 				'id'   => $prefix . 'donatedonors1',
 				'std'  => '5',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№1 Goal',
-				'desc' => 'Insert the goal Example: $2,500',
+				'name' => 'But №1',
+				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal1',
-				'std'  => '$2,500',
+				'std'  => '2,500€',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№2 Image',
-				'desc' => 'Upload an image. Size: 330x194',
-				'id'   => $prefix . 'donateimage2',
+				'name' => 'Image №1 ',
+				'desc' => 'Charger une image. Taille: 330x194',
+				'id'   => $prefix . 'donateimage1',
 				'type' => 'file',
 			),
 			array(
-				'name' => '№2 Title',
-				'desc' => 'Insert the title',
+				'name' => 'Titre №2',
+				'desc' => 'Inserer le titre',
 				'id'   => $prefix . 'donatetitle2',
-				'std'  => 'Divorce and child',
+				'std'  => 'Cults and alternative religions',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№2 Percent',
-				'desc' => 'Insert the pecent. Example: 88%',
+				'name' => 'Pourcentage №2',
+				'desc' => 'Inserer le pourcentage. Exemple: 88%',
 				'id'   => $prefix . 'donatepercent2',
-				'std'  => '50%',
+				'std'  => '88%',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№2 Raised',
-				'desc' => 'Insert the raised. Example: $2,200',
+				'name' => 'Montant acquis №2',
+				'desc' => 'Inserer le montant acquis. Exemple: 2,200€',
 				'id'   => $prefix . 'donateraised2',
-				'std'  => '$2,200',
+				'std'  => '2,200€',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№2 Donors',
-				'desc' => 'Insert the donors. Examle: 5',
+				'name' => 'Nbr donneurs №2',
+				'desc' => 'Exemle: 5',
 				'id'   => $prefix . 'donatedonors2',
 				'std'  => '5',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№2 Goal',
-				'desc' => 'Insert the goal Example: $2,500',
+				'name' => 'But №2',
+				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal2',
-				'std'  => '$2,500',
+				'std'  => '2,500€',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№3 Image',
-				'desc' => 'Upload an image. Size: 330x194',
+				'name' => 'Image №3 ',
+				'desc' => 'Charger une image. Taille: 330x194',
 				'id'   => $prefix . 'donateimage3',
 				'type' => 'file',
 			),
 			array(
-				'name' => '№3 Title',
-				'desc' => 'Insert the title',
+				'name' => 'Titre №3',
+				'desc' => 'Inserer le titre',
 				'id'   => $prefix . 'donatetitle3',
-				'std'  => 'Lgbt equality',
+				'std'  => 'Cults and alternative religions',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№3 Percent',
-				'desc' => 'Insert the pecent. Example: 88%',
+				'name' => 'Pourcentage №3',
+				'desc' => 'Inserer le pourcentage. Exemple: 88%',
 				'id'   => $prefix . 'donatepercent3',
-				'std'  => '50%',
+				'std'  => '88%',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№3 Raised',
-				'desc' => 'Insert the raised. Example: $2,200',
+				'name' => 'Montant acquis №3',
+				'desc' => 'Inserer le montant acquis. Exemple: 2,200€',
 				'id'   => $prefix . 'donateraised3',
-				'std'  => '$2,200',
+				'std'  => '2,200€',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№3 Donors',
-				'desc' => 'Insert the donors. Examle: 5',
+				'name' => 'Nbr donneurs №3',
+				'desc' => 'Exemle: 5',
 				'id'   => $prefix . 'donatedonors3',
 				'std'  => '5',
 				'type' => 'text',
 			),
 			array(
-				'name' => '№3 Goal',
-				'desc' => 'Insert the goal Example: $2,500',
+				'name' => 'But №3',
+				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal3',
-				'std'  => '$2,500',
+				'std'  => '2,500€',
 				'type' => 'text',
 			),
 			array(
-				'name' => 'Donate text',
+				'name' => 'Texte de donation',
 				'desc' => '',
 				'id'   => $prefix . 'donatetext2',
 				'type'    => 'title',
 			),
 			array(
-				'name' => 'Title',
+				'name' => 'Titre',
 				'desc' => '',
 				'id'   => $prefix . 'donatetitlebottom',
 				'std'  => 'Lorem ipsum dolor sit amet egestas mauris iridiculus semper',
 				'type' => 'text',
 			),
 			array(
-				'name' => 'Text',
+				'name' => 'Texte',
 				'desc' => '',
 				'id'   => $prefix . 'donatetextbottom',
 				'std'  => 'Integer pretium metus in turpis tristique semper. Pellentesque gravida auctor sapiense, at iaculis nisl tincidunt vel. Duis aliquam consectetur orci non pretium. Pellentesque sed quam eu urna congue blandit. Proin laoreet venenatis augue, eu commodo ligula fermentum at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curaesti Suspendisse tempor leo at massa laoreet vel tincidunt leo molestie. Proin tristique accumsan nisl, quis sollicitudin urna ullamcorper vel. In consectetur purus eu mauris pellentesque tincidunt. Suspendisse hendrerit pretium tellus. Sit amet elementum sapien mollis nec. Etiam sit amet hendrerit enim.',
@@ -3827,85 +3827,85 @@ function aletheme_metaboxes($meta_boxes) {
 		)
 	);
 
-	$meta_boxes[] = array(
-		'id'         => 'volountear_metabox',
-		'title'      => 'Volountear Options',
-		'pages'      => array( 'volountears', ), // Post type
-		'context'    => 'normal',
-		'priority'   => 'high',
-		'show_names' => true, // Show field names on the left
-		'fields' => array(
-			array(
-				'name' => 'Address',
-				'desc' => 'Insert the address',
-				'id'   => $prefix . 'volountearsaddress',
-				'std'  => '',
-				'type' => 'text',
-			),
-			array(
-				'name' => 'Assign Volountear',
-				'desc' => 'Select an assigned volountear',
-				'id'   => $prefix . 'assigned_volountear',
-				'std'  => '',
-				'type'    => 'select',
-				'options' => $cause_list,
-			),
-		)
-	);
+	// $meta_boxes[] = array(
+		// 'id'         => 'volountear_metabox',
+		// 'title'      => 'Volountear Options',
+		// 'pages'      => array( 'volountears', ), // Post type
+		// 'context'    => 'normal',
+		// 'priority'   => 'high',
+		// 'show_names' => true, // Show field names on the left
+		// 'fields' => array(
+			// array(
+				// 'name' => 'Address',
+				// 'desc' => 'Insert the address',
+				// 'id'   => $prefix . 'volountearsaddress',
+				// 'std'  => '',
+				// 'type' => 'text',
+			// ),
+			// array(
+				// 'name' => 'Assign Volountear',
+				// 'desc' => 'Select an assigned volountear',
+				// 'id'   => $prefix . 'assigned_volountear',
+				// 'std'  => '',
+				// 'type'    => 'select',
+				// 'options' => $cause_list,
+			// ),
+		// )
+	// );
 
 	$meta_boxes[] = array(
 		'id'         => 'cause_metabox',
-		'title'      => 'Cause Options',
+		'title'      => 'Options de Projet',
 		'pages'      => array( 'causes', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
 		'show_names' => true, // Show field names on the left
 		'fields' => array(
 			array(
-				'name' => 'Goal',
-				'desc' => 'Insert the numder. Eaxample: 2500',
+				'name' => 'But',
+				'desc' => 'Montant requis. Exemple: 2500',
 				'id'   => $prefix . 'causesgoal',
 				'std'  => '',
 				'type' => 'text',
 			),
 			array(
-				'name' => 'Donated',
-				'desc' => 'This field will change automatically on paypal donation finished',
+				'name' => 'Montant Acquis',
+				'desc' => 'Ce champ sera modifié automatiquement lorsque des payment paypal seront acceptés.',
 				'id'   => $prefix . 'causesdonated',
 				'std'  => '0',
 				'type' => 'text',
 			),
 			array(
-				'name' => 'Donors',
-				'desc' => 'This field will change automatically on paypal donation finished',
+				'name' => 'Nopmbre de donateurs',
+				'desc' => 'Ce champ sera modifié automatiquement lorsque des payment paypal seront acceptés.',
 				'id'   => $prefix . 'causesdonors',
 				'std'  => '0',
 				'type' => 'text',
 			),
-			array(
-				'name' => 'Show in The Slider?',
-				'desc' => 'Select enable to show in the slider',
-				'id'   => $prefix . 'causesshowinslider',
-				'std'  => 'off',
-				'type'    => 'select',
-				'options' => array(
-					array( 'name' => 'Disable', 'value' => 'off', ),
-					array( 'name' => 'Enable', 'value' => 'on', ),
-				),
-			),
-			array(
-				'name' => 'Location',
-				'desc' => 'Insert the address',
-				'id'   => $prefix . 'causesmapaddress',
-				'std'  => '',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Show in The Slider?',
+				// 'desc' => 'Select enable to show in the slider',
+				// 'id'   => $prefix . 'causesshowinslider',
+				// 'std'  => 'off',
+				// 'type'    => 'select',
+				// 'options' => array(
+					// array( 'name' => 'Disable', 'value' => 'off', ),
+					// array( 'name' => 'Enable', 'value' => 'on', ),
+				// ),
+			// ),
+			// array(
+				// 'name' => 'Location',
+				// 'desc' => 'Insert the address',
+				// 'id'   => $prefix . 'causesmapaddress',
+				// 'std'  => '',
+				// 'type' => 'text',
+			// ),
 		)
 	);
 
 	$meta_boxes[] = array(
 		'id'         => 'blog_metabox',
-		'title'      => 'Blog Options',
+		'title'      => 'Option de Blog',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3913,8 +3913,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-blog-1.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templateblog1count',
 				'std'  => '9',
 				'type' => 'text',
@@ -3924,7 +3924,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'blog_metabox',
-		'title'      => 'Blog Options',
+		'title'      => 'Option de Blog',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3932,8 +3932,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-blog-2.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templateblog2count',
 				'std'  => '3',
 				'type' => 'text',
@@ -3943,7 +3943,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'blog_metabox',
-		'title'      => 'Blog Options',
+		'title'      => 'Option de Blog',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3951,8 +3951,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-blog-3.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templateblog3count',
 				'std'  => '4',
 				'type' => 'text',
@@ -3962,7 +3962,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Gallery Options',
+		'title'      => 'Options de Gallerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3970,8 +3970,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-gallery-1.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templategallery1count',
 				'std'  => '12',
 				'type' => 'text',
@@ -3981,7 +3981,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Gallery Options',
+		'title'      => 'Options de Gallerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -3989,8 +3989,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-gallery-2.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templategallery2count',
 				'std'  => '9',
 				'type' => 'text',
@@ -4000,7 +4000,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Gallery Options',
+		'title'      => 'Options de Gallerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -4008,8 +4008,8 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_on'    => array( 'key' => 'page-template', 'value' => array('template-gallery-3.php'), ), // Specific post templates to display this metabox
 		'fields' => array(
 			array(
-				'name' => 'Count',
-				'desc' => 'Insert the count of posts',
+				'name' => 'Compteur',
+				'desc' => 'Inserer le nombre de post à afficher',
 				'id'   => $prefix . 'templategallery3count',
 				'std'  => '6',
 				'type' => 'text',
@@ -4019,43 +4019,43 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'team_metabox',
-		'title'      => 'Team Options',
+		'title'      => 'Options d\'équipe',
 		'pages'      => array( 'team', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
 		'show_names' => true, // Show field names on the left
 		'fields' => array(
 			array(
-				'name' => 'Post',
-				'desc' => 'Insert the post',
+				'name' => 'Poste',
+				'desc' => 'Inserer le poste',
 				'id'   => $prefix . 'teampost',
 				'std'  => '',
 				'type' => 'text',
 			),
 			array(
 				'name' => 'Twitter',
-				'desc' => 'Insert the profile url',
+				'desc' => 'Insérer l\'URL du profil',
 				'id'   => $prefix . 'teamtwitter',
 				'std'  => '',
 				'type' => 'text',
 			),
 			array(
 				'name' => 'Facebook',
-				'desc' => 'Insert the rofile url',
+				'desc' => 'Insérer l\'URL du profil',
 				'id'   => $prefix . 'teamfacebook',
 				'std'  => '',
 				'type' => 'text',
 			),
 			array(
 				'name' => 'Pinterest',
-				'desc' => 'Insert the rofile url',
+				'desc' => 'Insérer l\'URL du profil',
 				'id'   => $prefix . 'teampinterest',
 				'std'  => '',
 				'type' => 'text',
 			),
 			array(
 				'name' => 'Skype',
-				'desc' => 'Insert the rofile name',
+				'desc' => 'Insérer le nom du profil',
 				'id'   => $prefix . 'teamskype',
 				'std'  => '',
 				'type' => 'text',
@@ -4401,7 +4401,7 @@ function aletheme_get_post_types() {
 				),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Gallery',
+			'singular' => 'Gallerie',
 			'multiple' => 'Galleries',
 			'columns'    => array(
 				'first_image',
@@ -4421,8 +4421,8 @@ function aletheme_get_post_types() {
 				'taxonomies' => array('post_tag'),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Events',
-			'multiple' => 'Events',
+			'singular' => 'Evenement',
+			'multiple' => 'Evenements',
 			'columns'    => array(
 				'first_image',
 			),
@@ -4441,8 +4441,8 @@ function aletheme_get_post_types() {
 				'taxonomies' => array('post_tag'),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'News',
-			'multiple' => 'News',
+			'singular' => 'Blog',
+			'multiple' => 'Blog',
 			'columns'    => array(
 				'first_image',
 			)
@@ -4461,8 +4461,8 @@ function aletheme_get_post_types() {
 				'taxonomies' => array('post_tag'),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Volountear',
-			'multiple' => 'Volountears',
+			'singular' => 'Volontaire',
+			'multiple' => 'Volontaires',
 			'columns'    => array(
 				'first_image',
 			)
@@ -4481,8 +4481,8 @@ function aletheme_get_post_types() {
 				'taxonomies' => array('post_tag'),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Cause',
-			'multiple' => 'Causes',
+			'singular' => 'Projet',
+			'multiple' => 'Projets',
 			'columns'    => array(
 				'first_image',
 			)
@@ -4501,8 +4501,8 @@ function aletheme_get_post_types() {
 				'taxonomies' => array('post_tag'),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Team',
-			'multiple' => 'Team',
+			'singular' => 'Equipe',
+			'multiple' => 'Equipe',
 			'columns'    => array(
 				'first_image',
 			)
@@ -4525,8 +4525,8 @@ function aletheme_get_taxonomies() {
 				'args'        => array('orderby' => 'term_order'),
 				'hierarchical' => true,
 			),
-			'singular'    => 'Gallery Category',
-			'multiple'    => 'Gallery Categories',
+			'singular'    => 'Gallerie Category',
+			'multiple'    => 'Gallerie Categories',
 		),
 
 		'events-category'    => array(
@@ -4536,8 +4536,8 @@ function aletheme_get_taxonomies() {
 				'args'        => array('orderby' => 'term_order'),
 				'hierarchical' => true,
 			),
-			'singular'    => 'Events Category',
-			'multiple'    => 'Events Categories',
+			'singular'    => 'Evenement Category',
+			'multiple'    => 'Evenement Categories',
 		),
 
 		'news-category'    => array(
@@ -4547,8 +4547,8 @@ function aletheme_get_taxonomies() {
 				'args'        => array('orderby' => 'term_order'),
 				'hierarchical' => true,
 			),
-			'singular'    => 'News Category',
-			'multiple'    => 'News Categories',
+			'singular'    => 'Blog Category',
+			'multiple'    => 'Blog Categories',
 		),
 	);
 }

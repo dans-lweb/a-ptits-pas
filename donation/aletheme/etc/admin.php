@@ -33,9 +33,9 @@ add_action( 'admin_enqueue_scripts', 'ale_add_scripts', 10 );
  * Add Aletheme Options to Admin Navigation 
  */
 function ale_add_admin_menu() {
-    add_theme_page( __('Theme Options', 'aletheme'), __('Theme Options', 'aletheme'), 'edit_theme_options', 'aletheme','optionsframework_page');
+    add_theme_page( __('Options du Theme', 'aletheme'), __('Options du Theme', 'aletheme'), 'edit_theme_options', 'aletheme','optionsframework_page');
     add_theme_page(__('Sliders', 'aletheme'), __('Sliders', 'aletheme'), 'edit_theme_options', 'aletheme_sliders','aletheme_sliders_page');
-	add_theme_page(__('Theme Info', 'aletheme'), __('Theme Information', 'aletheme'), 'edit_theme_options', 'aletheme_info','aletheme_information_page');
+	add_theme_page(__('Info du Theme', 'aletheme'), __('Info du Theme', 'aletheme'), 'edit_theme_options', 'aletheme_info','aletheme_information_page');
 }
 add_action('admin_menu', 'ale_add_admin_menu', 1);
 

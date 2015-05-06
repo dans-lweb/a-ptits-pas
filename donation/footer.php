@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-4 contacts">
                     <h3><?php echo ale_get_option('footercontacttitle'); ?></h3>
-                    <div class="phone"><span class="fa fa-mobile"></span><span><?php echo ale_get_option('footercontacthone1'); ?></span> <?php echo ale_get_option('footercontacthone2'); ?></div>
+                    <div class="phone"><span class="fa fa-mobile"></span><?php echo ale_get_option('footercontacthone1'); ?><span> <?php echo ale_get_option('footercontacthone2'); ?></span></div>
                     
                     <div class="email"><span class="fa fa-envelope-o"></span><?php echo ale_get_option('footercontactemail'); ?></div>
 					<div class="adress">

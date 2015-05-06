@@ -5478,7 +5478,6 @@ header.top .right {
 }
 header.top .right .block {
   position: relative;
-  right:14%;
   height: 50px;
   float: left;
 }
@@ -5598,6 +5597,7 @@ header.top .right .search input[type='submit'] {
 header.main {
   width: 100%;
   background: #ffffff;
+  height:130px;
 }
 header.main.absolute {
   position: absolute;
@@ -5633,13 +5633,14 @@ header.main .logo a {
 header.main .logo a img {
   width: 100%;
   height: auto;
+  margin-top:15px;
 }
 header.main nav {
   position: absolute;
   height: 33px;
   right: 0;
   top: 50%;
-  margin-top: -16px;
+  
 }
 header.main nav > ul > li {
   display: inline-block;
@@ -6053,6 +6054,36 @@ section.info .col-4:nth-child(3n+2) {
 section.info .col-4:nth-child(3n+3) {
   padding-left: 60px;
 }
+
+.icon_{
+width: 82px;
+  height: 82px;
+  text-align: center;
+  line-height: 82px;
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 0 1px #c2c2c2;
+  -moz-box-shadow: 0 0 0 1px #c2c2c2;
+  box-shadow: 0 0 0 1px #c2c2c2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 120px;
+  margin-bottom: 10px;
+}
 section.info .col-4 .icon {
   font-size: 50px;
   color: #a5cd38 !important;
@@ -6146,7 +6177,6 @@ section.donate_ .col-6 {
 section.donate_ .col-6.text {
   border-right: 2px solid #7c7c7c;
   text-align: center;
-  padding: 10px 40px 10px 290px;
   color: #ffffff;
 }
 section.donate_ .col-6.text h3 {
@@ -6160,6 +6190,8 @@ section.donate_ .col-6.text h3 {
   height:100px;
   padding-left: 80px;
   padding-top:60px;
+  position:relative;
+  right:-11%;
 }
 section.donate_ .col-6.text h3 span {
   margin-right: 14px;
@@ -6170,12 +6202,16 @@ section.donate_ .col-6.text h4 {
   text-transform: none;
   margin: 0;
   margin-bottom: 0px;
+  position:relative;
+  right:-11%;
 }
 section.donate_ .col-6.text h5 {
   font-weight: 400;
   font-size: 19px;
   text-transform: none;
   margin: 0;
+  position:relative;
+  right:-11%;
 }
 section.donate_ .col-6.text h5 span {
   font-weight: 700;
@@ -6679,11 +6715,11 @@ section.news .about {
   padding-right: 15px;
 }
 section.news .about img {
-  width: 250px;
-  height: 196px;
+  
+  height: 200px;
   float:right;
-  margin-bottom: 25px;
-  margin-left:10px;
+  margin-right: 0;
+  margin-top: 20%;
   -webkit-border-top-right-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -6994,14 +7030,28 @@ footer .line .copy {
   font-weight: 300;
   font-size: 11px;
   color: #cfe4be;
+  line-height:29px;
 }
 footer .line .copy span {
   font-weight: 700;
   font-size: 14px;
 }
+
+.haut_page {
+  background: url("../css/images/logovert.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    color: #a5cd38;
+     font-size: 14px;
+    line-height: 35px;
+     padding-left: 35px;
+    text-transform: uppercase;
+	text-align:left;}
+  
+  .haut_page a{
+  color: #a5cd38;}
+  
 footer .footer {
   padding: 50px 0;
-  background: #2b2b2b;
+  background: #5b5657 !important;
 }
 footer .footer .col-4:nth-child(1) {
   padding-right: 30px;
@@ -7066,7 +7116,7 @@ footer .footer .social a:hover {
   opacity: 0.6;
 }
 footer .footer .contacts .fa {
-  color: #ffd800;
+  color: #a5cd38;
   margin-right: 10px;
   position: absolute;
   left: 0;
@@ -7076,7 +7126,7 @@ footer .footer .contacts .phone {
   position: relative;
   font-weight: 300;
   font-size: 17px;
-  color: #959595;
+  color: #cecece;
   margin-bottom: 15px;
   padding-left: 25px;
 }
@@ -7090,7 +7140,7 @@ footer .footer .contacts .adress {
   position: relative;
   font-weight: 400;
   font-size: 15px;
-  color: #959595;
+  color: #cecece;
   margin-bottom: 10px;
   padding-left: 25px;
 }
@@ -7102,19 +7152,20 @@ footer .footer .contacts .email {
   position: relative;
   font-weight: 400;
   font-size: 12px;
-  color: #959595;
+  color: #cecece;
   padding-left: 25px;
+  margin-bottom:15px;
 }
 footer .footer h3 {
   font-weight: 600;
   font-size: 18px;
-  color: #ffffff;
+  color: #cecece;
   text-transform: none;
 }
 footer .footer p {
   font-family: 'sans-serif';
   font-size: 12px;
-  color: #959595;
+  color: #cecece;
 }
 footer .footer .twits h3 span {
   color: #5ad2ff;
@@ -15966,6 +16017,13 @@ font-size:21px;}
     margin: 0 0 20px 0;
     padding: 0;
   }
+  
+  section.donate_ .col-6.text h3,
+  section.donate_ .col-6.text h4,
+  section.donate_ .col-6.text h5{
+  right:0;}
+  
+  
   section.donate_ #line {
     width: 500px;
   }
@@ -16010,12 +16068,14 @@ font-size:21px;}
     margin-bottom: 20px;
   }
   
+ 
   section.news .about p {
   font-size:12px;
   }
   
    section.news .about img {
-  float:right;}
+  margin:0;
+  float:none;}
   
   section.news .photos h3 {
     padding-left: 0;
@@ -16060,9 +16120,12 @@ font-size:21px;}
     text-align: center;
   }
   footer .line .copy {
-    margin-top: 10px;
-    float: none;
+    float: right;
   }
+  .haut_page {
+    float: left;
+    }
+	
   footer .footer .col-4 {
     width: 100%;
     padding: 0!important;
