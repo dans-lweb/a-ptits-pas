@@ -89,14 +89,14 @@ function aletheme_get_options() {
 						"type" => "upload");
 
 	$options[] = array( "name" => "Style de commentaires",
-						"desc" => "Laisser sur Alethemes Comments",
+						"desc" => "Choisir le type de commentaires",
 						"id" => "ale_comments_style",
 						"std" => "wp",
 						"type" => "select",
 						"options" => $comments_style);
 
 	$options[] = array( "name" => "Commentaires AJAX",
-						"desc" => "Laisser coché",
+						"desc" => "Laisser coché si Aletheme est choisi",
 						"id" => "ale_ajax_comments",
 						"std" => "1",
 						"type" => "checkbox");
@@ -2477,13 +2477,13 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'mail@compname.com',
 				'type' => 'text',
 			),
-			array(
-				'name' => 'Skype',
-				'desc' => 'Insérer votre nom de profil skype',
-				'id'   => $prefix . 'getintouchskype',
-				'std'  => 'companyname',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Skype',
+				// 'desc' => 'Insérer votre nom de profil skype',
+				// 'id'   => $prefix . 'getintouchskype',
+				// 'std'  => 'companyname',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Twitter',
 				'desc' => 'Votre URL de profil twitter',
@@ -2498,13 +2498,13 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => '',
 				'type' => 'text',
 			),
-			array(
-				'name' => 'Flickr',
-				'desc' => 'Votre URL de profil flickr',
-				'id'   => $prefix . 'getintouchflickr',
-				'std'  => 'flickr.com/photos/companyname',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Flickr',
+				// 'desc' => 'Votre URL de profil flickr',
+				// 'id'   => $prefix . 'getintouchflickr',
+				// 'std'  => 'flickr.com/photos/companyname',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Facebook',
 				'desc' => 'Votre URL de profil facebook',
@@ -2512,13 +2512,13 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'facebook.com/companyname',
 				'type' => 'text',
 			),
-			array(
-				'name' => 'Vimeo',
-				'desc' => 'Votre URL de profil vimeo',
-				'id'   => $prefix . 'getintouchvimeo',
-				'std'  => 'vimeo.com/companyname',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Vimeo',
+				// 'desc' => 'Votre URL de profil vimeo',
+				// 'id'   => $prefix . 'getintouchvimeo',
+				// 'std'  => 'vimeo.com/companyname',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Texte',
 				'desc' => 'Insérer le texte',
@@ -3494,12 +3494,12 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, printer took a galley. of type and scrambled it to make',
 				'type' => 'textarea',
 			),
-			array(
-				'name' => 'Lien №1 ',
-				'desc' => 'Insert your Url',
-				'id'   => $prefix . 'orgdetlink1',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Lien №1 ',
+				// 'desc' => 'Insert your Url',
+				// 'id'   => $prefix . 'orgdetlink1',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Titre №2 ',
 				'desc' => 'Organization Details',
@@ -3514,12 +3514,12 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, printer took a galley. of type and scrambled it to make',
 				'type' => 'textarea',
 			),
-			array(
-				'name' => 'Lien №2 ',
-				'desc' => 'Insert your Url',
-				'id'   => $prefix . 'orgdetlink2',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Lien №2 ',
+				// 'desc' => 'Insert your Url',
+				// 'id'   => $prefix . 'orgdetlink2',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Titre №3 ',
 				'desc' => 'Organization Details',
@@ -3534,12 +3534,12 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, printer took a galley. of type and scrambled it to make',
 				'type' => 'textarea',
 			),
-			array(
-				'name' => 'Lien №3 ',
-				'desc' => 'Insert your Url',
-				'id'   => $prefix . 'orgdetlink3',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Lien №3 ',
+				// 'desc' => 'Insert your Url',
+				// 'id'   => $prefix . 'orgdetlink3',
+				// 'type' => 'text',
+			// ),
 			array(
 				'name' => 'Comment participer?',
 				'desc' => '',
@@ -3560,12 +3560,12 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
 				'type' => 'textarea',
 			),
-			array(
-				'name' => 'Lien',
-				'desc' => 'Inserer le Lien',
-				'id'   => $prefix . 'howhelplink',
-				'type' => 'text',
-			),
+			// array(
+				// 'name' => 'Lien',
+				// 'desc' => 'Inserer le Lien',
+				// 'id'   => $prefix . 'howhelplink',
+				// 'type' => 'text',
+			// ),
 		)
 	);
 

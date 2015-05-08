@@ -33,21 +33,21 @@ get_header(); ?>
 		<section class="info i2">
 			<div class="center cf">
 				<div class="col-4 ">
-					<span class="icon fa fa-plus"></span>
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_bebe.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle1'); ?></h3>
 						<p><?php echo ale_get_meta('infotext1'); ?></p>
 					</div>
 				</div>
 				<div class="col-4 ">
-					<span class="icon fa fa-globe"></span>
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_famille.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle2'); ?></h3>
 						<p><?php echo ale_get_meta('infotext2'); ?></p>
 					</div>
 				</div>
 				<div class="col-4 ">
-					<span class="icon fa fa-tint"></span>
+					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_plus.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle3'); ?></h3>
 						<p><?php echo ale_get_meta('infotext3'); ?></p>
@@ -181,7 +181,7 @@ get_header(); ?>
 						<p>
 							<?php echo ale_get_meta('orgdettext1'); ?>
 						</p>
-						<a href="<?php echo ale_get_meta('orgdetlink1'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>
+						<!--<a href="<?php echo ale_get_meta('orgdetlink1'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>-->
 					</div>
 
 					<div class="col-4">
@@ -189,7 +189,7 @@ get_header(); ?>
 						<p>
 							<?php echo ale_get_meta('orgdettext2'); ?>
 						</p>
-						<a href="<?php echo ale_get_meta('orgdetlink2'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>
+						<!--<a href="<?php echo ale_get_meta('orgdetlink2'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>-->
 					</div>
 
 					<div class="col-4">
@@ -197,7 +197,7 @@ get_header(); ?>
 						<p>
 							<?php echo ale_get_meta('orgdettext3'); ?>
 						</p>
-						<a href="<?php echo ale_get_meta('orgdetlink3'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>
+						<!--<a href="<?php echo ale_get_meta('orgdetlink3'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>-->
 					</div>
 				</div>
 
@@ -218,13 +218,13 @@ get_header(); ?>
 						<p>
 							<?php echo ale_get_meta('howhelptext'); ?>
 						</p>
-						<a href="<?php echo ale_get_meta('howhelplink'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>
+						<!--<a href="<?php echo ale_get_meta('howhelplink'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>-->
 					</div>
 
 					<div class="col-4">
 						<form action="<?php the_permalink();?>" method="post">
 							<?php if (isset($_GET['success'])) : ?>
-								<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+								<p class="success"><?php _e('Merci pour votre message!', 'aletheme')?></p>
 							<?php endif; ?>
 							<?php if (isset($error) && isset($error['msg'])) : ?>
 								<p class="error"><?php echo $error['msg']?></p>
@@ -233,7 +233,7 @@ get_header(); ?>
 							<textarea name="contact[message]" placeholder="<?php _e('Message...', 'aletheme')?>" class="message" name="message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
 							
 							<span class="button-input">
-								<span class="text"><input id="submit" type="submit" value="<?php _e('Send', 'aletheme')?>"/></span>
+								<span class="text"><input id="submit" type="submit" value="<?php _e('Envoyer', 'aletheme')?>"/></span>
 								<span class="shadow"></span>
 							</span>
 							<?php wp_nonce_field() ?>

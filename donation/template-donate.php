@@ -35,26 +35,26 @@ get_header(); ?>
 
 			<div class="cf">
 				<div class="col-6 text">
-					<h3><?php _e('Thank you!','aletheme'); ?></h3>
-					<h4><?php _e("You've helped us raise a staggering","aletheme"); ?></h4>
+					<h3><?php _e('Merci!','aletheme'); ?></h3>
+					<h4><?php _e("Grace &agrave vous nous avons r&eacutecolt&eacute","aletheme"); ?></h4>
 					<h5>
 						<span>
 							<?php
 							if(ale_get_meta('donationcollam')){
-								echo ale_get_meta('currency') . ale_get_meta('donationcollam');
+								echo ale_get_meta('donationcollam') . ale_get_meta('currency');
 							} else {
 							   echo ale_get_meta('currency');
 								_e('0', 'aletheme');
 							}
 							?>
 					   </span>
-						<?php _e('so far!','aletheme'); ?>
+						<?php _e('pour nos projets!','aletheme'); ?>
 					</h5>
 				</div>
 
 				<?php if(shortcode_exists('dgx-donate')): ?>
 					<div class="col-6 but">
-						<a class="button-big"><span class="text"><?php _e('Donate/pay in your money','aletheme'); ?></span><span class="shadow"></span></a>
+						<a class="button-big"><span class="text"><?php _e('Aidez nous','aletheme'); ?></span><span class="shadow"></span></a>
 					</div>
 				<?php endif; ?>
 			</div>
@@ -75,7 +75,7 @@ get_header(); ?>
 			<!-- -->
 			<?php if(ale_get_option('twi')||ale_get_option('fb')||ale_get_option('pin')||ale_get_option('sky')): ?>
 				<div class="share">
-					<span><?php _e('Share:','aletheme'); ?> </span>
+					<span><?php _e('Partager:','aletheme'); ?> </span>
 					<?php if(ale_get_option('twi')): ?>
 						<a class="twitter" href="<?php echo ale_get_option('twi'); ?>"><span class="fa fa-twitter"></span></a>
 					<?php endif; ?>
@@ -118,19 +118,19 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donateraised1'); ?></h4>
-									<p><?php _e('Raised','aletheme'); ?></p>
+									<p><?php _e('Acquis','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donatedonors1'); ?></h4>
-									<p><?php _e('Donors','aletheme'); ?></p>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal1'); ?></h4>
-									<p><?php _e('Goal','aletheme'); ?></p>
+									<p><?php _e('But','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -151,19 +151,19 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donateraised2'); ?></h4>
-									<p><?php _e('Raised','aletheme'); ?></p>
+									<p><?php _e('Acquis','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donatedonors2'); ?></h4>
-									<p><?php _e('Donors','aletheme'); ?></p>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal2'); ?></h4>
-									<p><?php _e('Goal','aletheme'); ?></p>
+									<p><?php _e('But','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -184,19 +184,19 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donateraised3'); ?></h4>
-									<p><?php _e('Raised','aletheme'); ?></p>
+									<p><?php _e('Acquis','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donatedonors3'); ?></h4>
-									<p><?php _e('Donors','aletheme'); ?></p>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
 								</div>
 							</div>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal3'); ?></h4>
-									<p><?php _e('Goal','aletheme'); ?></p>
+									<p><?php _e('But','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -224,16 +224,16 @@ get_header(); ?>
 					<div class="col-4">
 						<form action="<?php the_permalink();?>" method="post">
 							<?php if (isset($_GET['success'])) : ?>
-								<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+								<p class="success"><?php _e('Merci pour votre message!', 'aletheme')?></p>
 							<?php endif; ?>
 							<?php if (isset($error) && isset($error['msg'])) : ?>
 								<p class="error"><?php echo $error['msg']?></p>
 							<?php endif; ?>
-							<input name="contact[name]" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" placeholder="<?php _e('Name', 'aletheme')?>" id="name" class="name" type="text" required="required"/>
+							<input name="contact[name]" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" placeholder="<?php _e('Nom', 'aletheme')?>" id="name" class="name" type="text" required="required"/>
 							<input name="contact[email]" value="<?php echo isset($_POST['contact']['email']) ? $_POST['contact']['email'] : ''?>" placeholder="<?php _e('E-mail', 'aletheme')?>" id="email" class="email" type="text" required="required"/>
 							<textarea name="contact[message]" placeholder="<?php _e('Message...', 'aletheme')?>" class="message" name="message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
 							<span class="button-input">
-								<span class="text"><input id="submit" type="submit" value="<?php _e('Send', 'aletheme')?>"/></span>
+								<span class="text"><input id="submit" type="submit" value="<?php _e('Envoyer', 'aletheme')?>"/></span>
 								<span class="shadow"></span>
 							</span>
 							<?php wp_nonce_field() ?>

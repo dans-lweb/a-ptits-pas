@@ -32,12 +32,12 @@
                     <span class="title"><?php the_title();?></span>
                     <div class="cf">
                         <div class="info">
-                            <div><span><?php _e('By:','aletheme'); ?></span> <?php echo get_the_author(); ?></div>
+                            <div><span><?php _e('Par:','aletheme'); ?></span> <?php echo get_the_author(); ?></div>
                             <?php
                             $current_category = wp_get_post_terms($post->ID, 'news-category', array("fields" => "all"));
                             if($current_category):?>
                                 <div>
-                                    <span><?php _e('In:','aletheme'); ?></span>
+                                    <span><?php _e('Dans:','aletheme'); ?></span>
                                     <?php
                                     foreach($current_category as $curcat){
                                         echo $curcat->name.' ';
@@ -46,10 +46,10 @@
                                 </div>
                             <?php endif; ?>
                             <?php if(the_tags()): ?>
-                                <div><span><?php the_tags(__('Tagged:','aletheme')); ?></div>
+                                <div><span><?php the_tags(__('Tag:','aletheme')); ?></div>
                             <?php endif; ?>
                         </div>
-                        <div class="date"><?php the_date('M j, Y');?></div>
+                        <div class="date"><?php the_date('j M Y');?></div>
                     </div>
                     <?php the_content();?>
                     <?php wp_link_pages(); ?>

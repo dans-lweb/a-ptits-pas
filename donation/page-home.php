@@ -112,7 +112,7 @@ get_header(); ?>
 			<!-- -->
 			<?php if(ale_get_option('twi')||ale_get_option('fb')||ale_get_option('pin')||ale_get_option('sky')): ?>
 				<div class="share">
-					<span><?php _e('Share:','aletheme'); ?> </span>
+					<span><?php _e('Partager:','aletheme'); ?> </span>
 					<?php if(ale_get_option('twi')): ?>
 						<a class="twitter" href="<?php echo ale_get_option('twi'); ?>"><span class="fa fa-twitter"></span></a>
 					<?php endif; ?>

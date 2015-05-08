@@ -21,7 +21,7 @@ get_header(); ?>
 		$blog_count = ale_get_meta('templateblog2count');
 		$query_blog = new WP_Query(
 			array(
-				'post_type' => 'post',
+				'post_type' => 'news',
 				'ignore_sticky_posts' => 1,
 				'post__not_in' => get_option('sticky_posts'),
 				'paged' => $paged,
@@ -49,7 +49,7 @@ get_header(); ?>
 								<?php echo ale_trim_excerpt(30); ?>
 							</div>
 							
-							<a href="<?php the_permalink(); ?>"><?php _e('Read more', 'aletheme'); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php _e('Lire la suite', 'aletheme'); ?></a>
 						</div>
 					</article>
 				<?php endwhile; ?>

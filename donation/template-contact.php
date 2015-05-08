@@ -45,10 +45,10 @@ get_header();
 					</a>
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchskype')): ?>
-					<a href="<?php echo ale_get_meta('getintouchskype'); ?>" class="skype">
+					<!--<a href="<?php echo ale_get_meta('getintouchskype'); ?>" class="skype">
 						<span class="fa fa-skype"></span>
 						<?php echo ale_get_meta('getintouchskype'); ?>
-					</a>
+					</a>-->
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchtwitter')): ?>
 					<a href="<?php echo ale_get_meta('getintouchtwitter'); ?>" class="twitt">
@@ -63,10 +63,10 @@ get_header();
 					</a>
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchflickr')): ?>
-					<a href="<?php echo ale_get_meta('getintouchflickr'); ?>" class="flickr">
+					<!--<a href="<?php echo ale_get_meta('getintouchflickr'); ?>" class="flickr">
 						<span class="fa fa-flickr"></span>
 						<?php echo ale_get_meta('getintouchflickr'); ?>
-					</a>
+					</a>-->
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchfacebook')): ?>
 					<a href="<?php echo ale_get_meta('getintouchfacebook'); ?>" class="facebook">
@@ -75,10 +75,10 @@ get_header();
 					</a>
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchvimeo')): ?>
-					<a href="<?php echo ale_get_meta('getintouchvimeo'); ?>" class="vimeo">
+					<!--<a href="<?php echo ale_get_meta('getintouchvimeo'); ?>" class="vimeo">
 						<span class="fa fa-vimeo-square"></span>
 						?php echo ale_get_meta('getintouchvimeo'); ?>
-					</a>
+					</a>-->
 				<?php endif; ?>
 
 				<p>
@@ -90,17 +90,17 @@ get_header();
 				<h2><?php echo ale_get_meta('leavereplytitle'); ?></h2>
 				<form action="<?php the_permalink();?>" method="post">
 					<?php if (isset($_GET['success'])) : ?>
-						<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+						<p class="success"><?php _e('Merci pour votre message!', 'aletheme')?></p>
 					<?php endif; ?>
 					<?php if (isset($error) && isset($error['msg'])) : ?>
 						<p class="error"><?php echo $error['msg']?></p>
 					<?php endif; ?>
-					<input name="contact[name]" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" placeholder="<?php _e('Name', 'aletheme')?>" class="name" type="text" required="required"/>
+					<input name="contact[name]" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" placeholder="<?php _e('Nom', 'aletheme')?>" class="name" type="text" required="required"/>
 					<input name="contact[email]" value="<?php echo isset($_POST['contact']['email']) ? $_POST['contact']['email'] : ''?>" placeholder="<?php _e('E-mail', 'aletheme')?>" class="email" type="text" required="required"/>
-					<input name="contact[subject]" value="<?php echo isset($_POST['contact']['subject']) ? $_POST['contact']['subject'] : ''?>" placeholder="<?php _e('Subject', 'aletheme')?>" class="subject" type="text" required="required"/>
+					<input name="contact[subject]" value="<?php echo isset($_POST['contact']['subject']) ? $_POST['contact']['subject'] : ''?>" placeholder="<?php _e('Sujet', 'aletheme')?>" class="subject" type="text" required="required"/>
 					<textarea name="contact[message]" placeholder="<?php _e('Message...', 'aletheme')?>" class="message" name="message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
 					<span class="button-input">
-						<span class="text"><input id="submit" type="submit" value="<?php _e('Send', 'aletheme')?>"/></span>
+						<span class="text"><input id="submit" type="submit" value="<?php _e('Envoyer', 'aletheme')?>"/></span>
 					<span class="shadow"></span>
 				</span>
 					<?php wp_nonce_field() ?>
