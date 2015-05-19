@@ -201,6 +201,105 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
+					
+					<div class="col-4">
+						<?php if(ale_get_meta('donateimage4')): ?>
+							<img src="<?php echo ale_get_meta('donateimage4'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/330x194/f2f2f2/414141" alt>'; endif; ?>
+						<h3><?php echo ale_get_meta('donatetitle4'); ?></h3>
+
+						<div class="percent">
+							<div class="active" style="width: <?php echo ale_get_meta('donatepercent4'); ?>"></div>
+							<div class="num" style="left: <?php echo ale_get_meta('donatepercent4'); ?>"><?php echo ale_get_meta('donatepercent4'); ?></div>
+						</div>
+
+						<div class="cols cf">
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donateraised4'); ?></h4>
+									<p><?php _e('Acquis','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donatedonors4'); ?></h4>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donategoal4'); ?></h4>
+									<p><?php _e('But','aletheme'); ?></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<?php if(ale_get_meta('donateimage5')): ?>
+							<img src="<?php echo ale_get_meta('donateimage5'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/330x194/f2f2f2/414141" alt>'; endif; ?>
+						<h3><?php echo ale_get_meta('donatetitle5'); ?></h3>
+
+						<div class="percent">
+							<div class="active" style="width: <?php echo ale_get_meta('donatepercent5'); ?>"></div>
+							<div class="num" style="left: <?php echo ale_get_meta('donatepercent5'); ?>"><?php echo ale_get_meta('donatepercent5'); ?></div>
+						</div>
+
+						<div class="cols cf">
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donateraised5'); ?></h4>
+									<p><?php _e('Acquis','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donatedonors5'); ?></h4>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donategoal5'); ?></h4>
+									<p><?php _e('But','aletheme'); ?></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-4">
+						<?php if(ale_get_meta('donateimage6')): ?>
+							<img src="<?php echo ale_get_meta('donateimage6'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/330x194/f2f2f2/414141" alt>'; endif; ?>
+						<h3><?php echo ale_get_meta('donatetitle6'); ?></h3>
+
+						<div class="percent">
+							<div class="active" style="width: <?php echo ale_get_meta('donatepercent6'); ?>"></div>
+							<div class="num" style="left: <?php echo ale_get_meta('donatepercent6'); ?>"><?php echo ale_get_meta('donatepercent6'); ?></div>
+						</div>
+
+						<div class="cols cf">
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donateraised6'); ?></h4>
+									<p><?php _e('Acquis','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donatedonors6'); ?></h4>
+									<p><?php _e('Donateurs','aletheme'); ?></p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="back">
+									<h4><?php echo ale_get_meta('donategoal6'); ?></h4>
+									<p><?php _e('But','aletheme'); ?></p>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 

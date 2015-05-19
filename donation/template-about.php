@@ -161,7 +161,102 @@ get_header(); ?>
 							<?php endif; ?>
 						</div>
 					</div>
+					
+					<div class="col-3">
+						<?php if(ale_get_meta('highermanphoto5')): ?>
+							<img src="<?php echo ale_get_meta('highermanphoto5'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/250x318/f2f2f2/414141" alt>'; endif; ?>
+						<div class="name"><?php echo ale_get_meta('highermanname5'); ?></div>
+						<div class="spec"><?php echo ale_get_meta('highermanspec5'); ?></div>
+						<p><?php echo ale_get_meta('highermantext5'); ?></p>
 
+						<div class="contacts">
+							<?php if(ale_get_meta('highermantwitter5')): ?>
+								<a class="twitter" href="<?php echo ale_get_meta('highermantwitter5'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanfacebook5')): ?>
+								<a class="facebook" href="<?php echo ale_get_meta('highermanfacebook5'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanpinterest5')): ?>
+								<a class="pinterest" href="<?php echo ale_get_meta('highermanpinterest5'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanskype5')): ?>
+								<a class="skype" href="<?php echo ale_get_meta('highermanskype5'); ?>"></a>
+							<?php endif; ?>
+						</div>
+					</div>
+
+					<div class="col-3">
+						<?php if(ale_get_meta('highermanphoto6')): ?>
+							<img src="<?php echo ale_get_meta('highermanphoto6'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/250x318/f2f2f2/414141" alt>'; endif; ?>
+						<div class="name"><?php echo ale_get_meta('highermanname6'); ?></div>
+						<div class="spec"><?php echo ale_get_meta('highermanspec6'); ?></div>
+						<p><?php echo ale_get_meta('highermantext6'); ?></p>
+
+						<div class="contacts">
+							<?php if(ale_get_meta('highermantwitter6')): ?>
+								<a class="twitter" href="<?php echo ale_get_meta('highermantwitter6'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanfacebook6')): ?>
+								<a class="facebook" href="<?php echo ale_get_meta('highermanfacebook6'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanpinterest6')): ?>
+								<a class="pinterest" href="<?php echo ale_get_meta('highermanpinterest6'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanskype6')): ?>
+								<a class="skype" href="<?php echo ale_get_meta('highermanskype6'); ?>"></a>
+							<?php endif; ?>
+						</div>
+					</div>
+					
+					<div class="col-3">
+						<?php if(ale_get_meta('highermanphoto7')): ?>
+							<img src="<?php echo ale_get_meta('highermanphoto7'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/250x318/f2f2f2/414141" alt>'; endif; ?>
+						<div class="name"><?php echo ale_get_meta('highermanname7'); ?></div>
+						<div class="spec"><?php echo ale_get_meta('highermanspec7'); ?></div>
+						<p><?php echo ale_get_meta('highermantext7'); ?></p>
+
+						<div class="contacts">
+							<?php if(ale_get_meta('highermantwitter7')): ?>
+								<a class="twitter" href="<?php echo ale_get_meta('highermantwitter7'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanfacebook7')): ?>
+								<a class="facebook" href="<?php echo ale_get_meta('highermanfacebook7'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanpinterest7')): ?>
+								<a class="pinterest" href="<?php echo ale_get_meta('highermanpinterest7'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanskype7')): ?>
+								<a class="skype" href="<?php echo ale_get_meta('highermanskype7'); ?>"></a>
+							<?php endif; ?>
+						</div>
+					</div>
+
+					<div class="col-3">
+						<?php if(ale_get_meta('highermanphoto8')): ?>
+							<img src="<?php echo ale_get_meta('highermanphoto8'); ?>" alt=""/>
+						<?php else: echo '<img src="http://placehold.it/250x318/f2f2f2/414141" alt>'; endif; ?>
+						<div class="name"><?php echo ale_get_meta('highermanname8'); ?></div>
+						<div class="spec"><?php echo ale_get_meta('highermanspec8'); ?></div>
+						<p><?php echo ale_get_meta('highermantext8'); ?></p>
+
+						<div class="contacts">
+							<?php if(ale_get_meta('highermantwitter8')): ?>
+								<a class="twitter" href="<?php echo ale_get_meta('highermantwitter8'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanfacebook8')): ?>
+								<a class="facebook" href="<?php echo ale_get_meta('highermanfacebook8'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanpinterest8')): ?>
+								<a class="pinterest" href="<?php echo ale_get_meta('highermanpinterest8'); ?>"></a>
+							<?php endif; ?>
+							<?php if(ale_get_meta('highermanskype8')): ?>
+								<a class="skype" href="<?php echo ale_get_meta('highermanskype8'); ?>"></a>
+							<?php endif; ?>
+						</div>
+					</div>
 				</div>
 
 			</div>
