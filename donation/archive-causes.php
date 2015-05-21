@@ -19,7 +19,7 @@
 		<?php endif; ?>
 
 		<!-- Blog -->
-		<section class="col-8 blog-page causes-page">
+		<section class="col-12 blog-page causes-page">
 			<?php
 			wp_reset_query();
 			if ( get_query_var('paged') ) $paged = get_query_var('paged');
@@ -61,34 +61,35 @@
 							<?php if(ale_get_meta('causesdonated')): ?>
 								<div class="item">
 									<span class="value"><?php echo ale_get_meta('causesdonated'); ?></span>
-									<span class="description"><?php _e('Donated', 'aletheme'); ?></span>
+									<span class="description"><?php _e('Acquis', 'aletheme'); ?></span>
 								</div>
 							<?php endif; ?>
 
 							<?php if(ale_get_meta('causesdonors')): ?>
 								<div class="item donors">
 									<span class="value"><?php echo ale_get_meta('causesdonors'); ?></span>
-									<span class="description"><?php _e('Donors', 'aletheme'); ?></span>
+									<span class="description"><?php _e('Donateurs', 'aletheme'); ?></span>
 								</div>
 							<?php endif; ?>
 
 							<?php if(ale_get_meta('causesgoal')): ?>
 								<div class="item">
-									<span class="value"><?php echo ale_get_option('currencycurrent') . ' '. ale_get_meta('causesgoal'); ?></span>
-									<span class="description"><?php _e('Goal', 'aletheme'); ?></span>
+									<span class="value"><?php echo  ale_get_meta('causesgoal'). ' '. ale_get_option('currencycurrent'); ?></span>
+									<span class="description"><?php _e('But', 'aletheme'); ?></span>
 								</div>
 							<?php endif; ?>
 						</div>
 
 						<div class="string">
-							<?php echo ale_trim_excerpt(18); ?>
+							<?php the_excerpt(); ?>
 						</div>
+						<a class="suite" href="<?php the_permalink(); ?>"><?php _e('Lire la suite', 'aletheme'); ?></a>
 					</div>
 				</article>
 			<?php endwhile;  endif; wp_reset_query();?>
 
 			<?php ale_page_links(); ?>
 		</section>
-		<?php get_sidebar(); ?>
+	
 	</div>
 <?php get_footer(); ?>

@@ -41,14 +41,14 @@ get_header(); ?>
 		<section class="info">
 			<div class="center cf">
 				<div class="col-4 ">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_bebe.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_bebe.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle1'); ?></h3>
 						<p><?php echo ale_get_meta('infotext1'); ?></p>
 					</div>
 				</div>
 				<div class="col-4">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_famille.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_famille.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle2'); ?></h3>
 						<p><?php echo ale_get_meta('infotext2'); ?></p>
@@ -56,7 +56,7 @@ get_header(); ?>
 
 				</div>
 				<div class="col-4">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_plus.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_plus.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle3'); ?></h3>
 						<p><?php echo ale_get_meta('infotext3'); ?></p>
@@ -73,7 +73,7 @@ get_header(); ?>
 			<div class="cf">
 				<div class="col-6 text">
 					<h3><?php _e('Merci!','aletheme'); ?></h3>
-					<h4><?php _e("Grace &agrave vous nous avons r&eacutecolt&eacute","aletheme"); ?></h4>
+					<h4><?php _e("Gr&acircce &agrave vous nous avons r&eacutecolt&eacute","aletheme"); ?></h4>
 					<h5>
 						<span>
 							<?php
@@ -130,125 +130,20 @@ get_header(); ?>
 		</section>
 	<?php endif; ?>
 
-	<?php if(ale_get_meta('latestdonationshome')!='off'): ?>
-		<!-- Latest Donations -->
-		<section class="latest-donations">
-			<div class="center cf">
-				<h2><?php echo ale_get_meta('lastdontitle'); ?></h2>
-
-				<div class="peoples">
-					<?php if(ale_get_meta('latestdonationshomebox')!='last_donors'): ?>
-						<div class="col-2i">
-							<div class="circle">
-								<?php if(ale_get_meta('lastdonimage1')): ?>
-									<img src="<?php echo ale_get_meta('lastdonimage1'); ?>" alt=""/>
-								<?php else: echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>'; endif; ?>
-							</div>
-							<div class="name"><?php echo ale_get_meta('lastdonname1'); ?></div>
-							<div class="state"><?php echo ale_get_meta('lastdonstate1'); ?></div>
-							<div class="donated">
-								<div class="left"><?php _e('Donated','aletheme'); ?></div>
-								<div class="right"><?php echo ale_get_meta('lastdondon1'); ?></div>
-							</div>
-						</div>
-						<div class="col-2i">
-							<div class="circle">
-								<?php if(ale_get_meta('lastdonimage2')): ?>
-									<img src="<?php echo ale_get_meta('lastdonimage2'); ?>" alt=""/>
-								<?php else: echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>'; endif; ?>
-							</div>
-							<div class="name"><?php echo ale_get_meta('lastdonname2'); ?></div>
-							<div class="state"><?php echo ale_get_meta('lastdonstate2'); ?></div>
-							<div class="donated">
-								<div class="left"><?php _e('Donated','aletheme'); ?></div>
-								<div class="right"><?php echo ale_get_meta('lastdondon2'); ?></div>
-							</div>
-						</div>
-						<div class="col-2i">
-							<div class="circle">
-								<?php if(ale_get_meta('lastdonimage3')): ?>
-									<img src="<?php echo ale_get_meta('lastdonimage3'); ?>" alt=""/>
-								<?php else: echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>'; endif; ?>
-							</div>
-							<div class="name"><?php echo ale_get_meta('lastdonname3'); ?></div>
-							<div class="state"><?php echo ale_get_meta('lastdonstate3'); ?></div>
-							<div class="donated">
-								<div class="left"><?php _e('Donated','aletheme'); ?></div>
-								<div class="right"><?php echo ale_get_meta('lastdondon3'); ?></div>
-							</div>
-						</div>
-						<div class="col-2i">
-							<div class="circle">
-								<?php if(ale_get_meta('lastdonimage4')): ?>
-									<img src="<?php echo ale_get_meta('lastdonimage4'); ?>" alt=""/>
-								<?php else: echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>'; endif; ?>
-							</div>
-							<div class="name"><?php echo ale_get_meta('lastdonname4'); ?></div>
-							<div class="state"><?php echo ale_get_meta('lastdonstate4'); ?></div>
-							<div class="donated">
-								<div class="left"><?php _e('Donated','aletheme'); ?></div>
-								<div class="right"><?php echo ale_get_meta('lastdondon4'); ?></div>
-							</div>
-						</div>
-						<div class="col-2i">
-							<div class="circle">
-								<?php if(ale_get_meta('lastdonimage5')): ?>
-									<img src="<?php echo ale_get_meta('lastdonimage5'); ?>" alt=""/>
-								<?php else: echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>'; endif; ?>
-							</div>
-							<div class="name"><?php echo ale_get_meta('lastdonname5'); ?></div>
-							<div class="state"><?php echo ale_get_meta('lastdonstate5'); ?></div>
-							<div class="donated">
-								<div class="left"><?php _e('Donated','aletheme'); ?></div>
-								<div class="right"><?php echo ale_get_meta('lastdondon5'); ?></div>
-							</div>
-						</div>
-					<?php else:
-						$donor_list = get_post_meta($post->ID, 'ale_paypal_details', true);
-						if($donor_list){
-							$donors_count = 1; 
-							foreach ($donor_list as $pp_stat){
-								$donors_count ++;
-								if($pp_stat['ale_payment_status']=='Completed') {?>
-									<div class="col-2i">
-										<div class="circle">
-											<?php if(get_avatar( $pp_stat['ale_payer_email'], 86 )){ ?>
-												<img src="<?php echo get_avatar( $pp_stat['ale_payer_email'], 86 ); ?>" alt=""/>
-											<?php } else{
-												echo '<img src="http://placehold.it/86x86/f2f2f2/414141" alt>';
-											} ?>
-										</div>
-										<div class="name"><?php echo $pp_stat['ale_first_name']; ?></div>
-										<div class="state"><?php echo $pp_stat['ale_last_name']; ?></div>
-										<div class="donated">
-											<div class="left"><?php _e('Donated','aletheme'); ?></div>
-											<div class="right"><?php echo $pp_stat['ale_payment_gross']; ?></div>
-										</div>
-									</div>
-								<?php } 
-								if($donors_count==5){
-									return false;
-								}
-							} 
-						}
-					endif; ?>
-				</div>
-			</div>
-		</section>
-	<?php endif; ?>
 	
-<section class="partenaires">
+	
+	<section class="partenaires">
 		<div class="center cf">
 			<h2>Nos partenaires</h2>
 			<div >
 				<div class="col-2i">
 					<div class="partner-logo">
-						<a  target=blank href="http://www.sosprema.com"><img class="sosprema" alt="sosprema" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/logo-sosprema.png"></a>
+						<a  target=blank href="http://www.sosprema.com"><img class="sosprema" alt="sosprema" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-sosprema.png"></a>
 					</div>
 				</div>
 				<div class="col-2i">
 					<div class="partner-logo">
-						<a  target=blank href="http://www.lactalis.fr"><img class="lactalis"alt="lactalis" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/logo-lactalis.png"></a>
+						<a  target=blank href="http://www.lactalis.fr"><img class="lactalis"alt="lactalis" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-lactalis.png"></a>
 					</div>
 				</div>
 				
@@ -262,19 +157,19 @@ get_header(); ?>
 			<div class="top-border"></div>
 
 			<div class="center cf">
-				<h2><img alt="aptitpas" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/logo-blanc.png"><?php echo ale_get_meta('howhelptitle'); ?></h2>
+				<h2><img alt="aptitpas" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-blanc.png"><?php echo ale_get_meta('howhelptitle'); ?></h2>
 
 				<div class="col-6 left">
 					<h3><?php echo ale_get_meta('howhelptitlesmall'); ?></h3>
 					<p>
 						<?php echo ale_get_meta('howhelptext'); ?>
 					</p>
-					<a class="button" href="<?php echo ale_get_meta('howhelpurl'); ?>"><span class="text"><?php _e('En savoir plus','aletheme'); ?></span><span class="shadow"></span></a>
+					<a class="button" href="http://preprod.aptitspas-asso.fr/presentation/"><span class="text"><?php _e('En savoir plus','aletheme'); ?></span><span class="shadow"></span></a>
 				</div>
 				<div class="col-6 right">
-					<div class="col-6 item"><a href="" class="howhelplink"> Devenir Membre </a></div>
-					<div class="col-6 item"><a href="" class="howhelplink"> Devenir M&eacutec&egravene </a></div>
-					<div class="col-6 item"><a href="" class="howhelplink"> Devenir B&eacuten&eacutevole </a></div>
+					<div class="col-6 item"><a href="http://preprod.aptitspas-asso.fr/contact/" class="howhelplink"> Devenir Membre </a></div>
+					<div class="col-6 item"><a href="http://preprod.aptitspas-asso.fr/contact/" class="howhelplink"> Devenir M&eacutec&egravene </a></div>
+					<div class="col-6 item"><a href="http://preprod.aptitspas-asso.fr/contact/" class="howhelplink"> Devenir B&eacuten&eacutevole </a></div>
 					
 					
 				</div>

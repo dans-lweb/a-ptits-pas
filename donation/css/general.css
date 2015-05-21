@@ -45,7 +45,7 @@
 }
 .col-2i {
   width: 20%;
-  margin-left:9%;
+  margin-left:7%;
 }
 .col-3 {
   width: 25%;
@@ -288,15 +288,23 @@ a {
   transition: color 100ms linear ease-in-out 0.2s;
   color: #a5cd38;
 }
-
-section.cause h3 a{
-  color:#ca3693;
-  }
   
 .danslweb{
  font-weight:bold;
  color:#a5cd38;}
  
+ .suite{
+ background: #ca3693 none repeat scroll 0 0;
+
+    border-radius: 25px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out 0s;}
+	
 /* Typography
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
 h1,
@@ -307,6 +315,7 @@ h5,
 h6 {
   margin-bottom: 1em;
   text-transform: uppercase;
+  font-family: Ubuntu!important;
 }
 h1 {
   font-size: 28px;
@@ -335,6 +344,7 @@ p {
   margin: 0 0 1em 0;
   text-align: left;
   line-height: 1.5;
+  font-family: Ubuntu!important;
 }
 strong {
   font-weight: bold;
@@ -5834,13 +5844,13 @@ header.main #mobile-button .fa {
 }
 header.main #mobile-menu {
   display: none;
+  background:#5b5657 none repeat scroll 0 0 !important;
   min-width: 140px !important;
   z-index: 100;
   position: absolute;
   right: -1px;
   top: 80%;
   padding: 20px;
-  background: #7bae4e;
   -webkit-border-top-right-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -5858,12 +5868,12 @@ header.main #mobile-menu {
   background-clip: padding-box;
 }
 header.main #mobile-menu li {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 header.main #mobile-menu li a {
   font-family: 'sans-serif';
   font-size: 15px;
-  color: #38383f;
+  color: #a5cd38;
   line-height: 20px;
 }
 header.main #mobile-menu ul ul {
@@ -5940,7 +5950,7 @@ header.main #mobile-menu ul ul li a {
   bottom: 94px;
   font-size: 46px;
   color: #ffffff;
-  background: rgba(156, 206, 56, 0.4)!important;
+  background: rgba(156, 206, 56, 0.55)!important;
   text-align: center;
   left: 50%;
   margin-left: -178px;
@@ -5961,6 +5971,8 @@ header.main #mobile-menu ul ul li a {
   text-align: center;
   left: 50%;
   margin-left: -110px;
+  padding-left:10px;
+  padding-right:10px;
 }
 #slider .slides li.flex-active-slide {
   -webkit-transition: all 0.3s ease;
@@ -6144,6 +6156,7 @@ section.info .col-4 p {
   font-size: 12px;
   color: #7c7c7b;
   margin-bottom: 0;
+  text-align:center;
 }
 /* Donate
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
@@ -6184,6 +6197,14 @@ section.donate_ .col-6.text {
   text-align: center;
   color: #ffffff;
 }
+
+section.cause h3 a{
+  color:#2b2b2b;
+  }
+  
+  section.cause h3 a:hover{
+  color:#ca3693;
+  }
 section.donate_ .col-6.text h3 {
   display: inline-block;
   font-weight: 700;
@@ -6953,6 +6974,7 @@ section.bottom .text {
   position: absolute;
   left: 0;
   bottom: 14%;
+  text-align:left;
 }
 section.bottom .text h3 {
   font-weight: 600;
@@ -7061,13 +7083,16 @@ footer .footer {
 }
 footer .footer .col-4:nth-child(1) {
   padding-right: 30px;
+  text-align:left;
 }
 footer .footer .col-4:nth-child(2) {
   padding-left: 15px;
   padding-right: 15px;
+  text-align:left;
 }
 footer .footer .col-4:nth-child(3) {
   padding-left: 30px;
+  text-align:left;
 }
 footer .footer .social {
   margin-top: 25px;
@@ -7219,6 +7244,7 @@ section.top-page-nav h2 {
   float: left;
   line-height: 40px;
   max-width: 63.4%;
+  text-align:left;
 }
 section.top-page-nav .navi {
   float: right;
@@ -7402,6 +7428,9 @@ section.management .peoples .contacts .skype {
 }
 /* Organization Details
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+section.org-details .col-4 li a {
+	color:#ca3693!important;
+}
 section.org-details {
   padding: 40px 0 0 0;
 }
@@ -7538,6 +7567,7 @@ section.you-help .col-4 form textarea {
   margin-top: 40px;
   padding-right: 35px;
   margin-bottom: 40px;
+  padding-left:35px;
 }
 .blog-page .smalls {
   position: relative;
@@ -7678,7 +7708,7 @@ section.you-help .col-4 form textarea {
 .blog-page article.big .title {
   display: block;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 25px;
   color: #484849;
   text-transform: uppercase;
   margin: 20px 0;
@@ -7754,7 +7784,7 @@ section.you-help .col-4 form textarea {
 }
 .blog-page article.big a {
   font-size: 13px;
-  color: #7bae4e;
+  color: #ca3693 !important;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -ms-transition: opacity 0.3s ease;
@@ -7765,6 +7795,7 @@ section.you-help .col-4 form textarea {
   -o-transition: opacity 0.3s ease ease-in-out 0.2s;
   transition: opacity 0.3s ease ease-in-out 0.2s;
   margin: 0;
+  font-weight:bold;
 }
 .blog-page article.big a:hover {
   opacity: 0.5;
@@ -8342,7 +8373,7 @@ aside.blog .widget ul {
 }
 aside.blog .widget .caption {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 20px;
   color: #1e1d1c;
   text-transform: none;
   margin-bottom: 20px;
@@ -8557,27 +8588,27 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
 .gallery .photos > img {
   margin-bottom: 28px;
 }
-.gallery .photos .col-6 {
+.gallery .photos .col-4 {
   margin-bottom: 24px;
   position: relative;
 }
-.gallery .photos .col-6:nth-child(2n+1) {
-  padding-right: 12px;
-}
-.gallery .photos .col-6:nth-child(2n+1) .like {
-  right: 12px;
-}
-.gallery .photos .col-6:nth-child(2n+2) {
+.gallery .photos .col-4:nth-child(2n+1) {
   padding-left: 12px;
 }
-.gallery .photos .col-6 > a {
+.gallery .photos .col-4:nth-child(2n+1) .like {
+  right: 12px;
+}
+.gallery .photos .col-4:nth-child(2n+2) {
+  padding-left: 12px;
+}
+.gallery .photos .col-4 > a {
   display: block;
   position: relative;
 }
-.gallery .photos .col-6 > a:hover > .mask {
+.gallery .photos .col-4 > a:hover > .mask {
   opacity: 1;
 }
-.gallery .photos .col-6 > a .mask {
+.gallery .photos .col-4 > a .mask {
   position: absolute;
   left: 0;
   top: 0;
@@ -8614,7 +8645,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   -o-transition: all 300ms ease-in-out ease-in-out 0.2s;
   transition: all 300ms ease-in-out ease-in-out 0.2s;
 }
-.gallery .photos .col-6 > a .mask .fa {
+.gallery .photos .col-4 > a .mask .fa {
   font-size: 28px;
   color: #ffffff;
   position: absolute;
@@ -8623,7 +8654,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   left: 50%;
   margin-left: -14px;
 }
-.gallery .photos .col-6 > a img {
+.gallery .photos .col-4 > a img {
   width: 100%;
   height: auto;
   -webkit-border-top-right-radius: 3px;
@@ -8642,7 +8673,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.gallery .photos .col-6 .like {
+.gallery .photos .col-4 .like {
   position: absolute;
   right: 0;
   top: 0;
@@ -8664,7 +8695,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
-.gallery .photos .col-6 .like p {
+.gallery .photos .col-4 .like p {
   margin: 0;
   font-weight: 600;
   font-size: 13px;
@@ -8674,7 +8705,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   color: #ffffff;
   display: inline-block;
 }
-.gallery .photos .col-6 .like p:before {
+.gallery .photos .col-4 .like p:before {
   content: "\f08a";
   font-family: 'FontAwesome';
   font-size: 16px;
@@ -8682,7 +8713,7 @@ aside.blog .widget_aletheme_best_sellers_widget .item img {
   display: inline-block;
   line-height: 27px;
 }
-.gallery .photos .col-6 .like p a {
+.gallery .photos .col-4 .like p a {
   margin-top: 0;
   min-width: 0px;
 }
@@ -8704,6 +8735,12 @@ section.contacts h2 {
 section.contacts .col-7:nth-child(1) {
   padding-right: 20px;
 }
+
+
+section.contacts .col-7 h2 {
+    margin-bottom: 67px;
+    margin-top: 20px;
+}
 section.contacts .col-7 > a {
   display: block;
   margin-bottom: 15px;
@@ -8721,6 +8758,7 @@ section.contacts .col-7 > a {
   transition: all 300ms ease-in-out ease-in-out 0.2s;
   padding-left: 40px;
   position: relative;
+  text-align:left;
 }
 section.contacts .col-7 > a span {
   color: #bebebe;
@@ -8738,19 +8776,43 @@ section.contacts .col-7 > a span {
   transition: all 300ms ease-in-out ease-in-out 0.2s;
 }
 section.contacts .col-7 > a:hover {
-  color: #7bae4e;
+  color: #ca3693 !important;
   opacity: 0.8;
 }
 section.contacts .col-7 > a:hover span {
-  color: #7bae4e;
+  color: #ca3693 !important;
 }
-section.contacts .col-7 p {
+/* section.contacts .col-7 p {
   margin-top: 40px;
   font-weight: 400;
   font-size: 13px;
   color: #7c7c7b;
   line-height: 24px;
+} */
+section.contacts .col-7 p {
+display: block;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #777777;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out ease-in-out 0.2s;
+  -moz-transition: all 300ms ease-in-out ease-in-out 0.2s;
+  -o-transition: all 300ms ease-in-out ease-in-out 0.2s;
+  transition: all 300ms ease-in-out ease-in-out 0.2s;
+  padding-left: 40px;
+  position: relative;
+  text-align:left;}
+  
+  section.contacts .col-7 > p:hover {
+  color: #7bae4e;
+  opacity: 0.8;
 }
+  
 section.contacts .col-5 {
   padding-left: 10px;
 }
@@ -8837,6 +8899,7 @@ section.cause h2 {
 section.cause .causes .col-4 {
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom:10px;
 }
 /* section.cause .causes .col-4:nth-child(3) {
   padding-left: 30px;
@@ -8938,6 +9001,9 @@ section.cause .causes .percent .num {
   font-weight: 400;
   font-size: 13px;
 }
+
+ 
+	
 section.cause .causes .cols {
   margin-top: 25px;
   margin-bottom:10px;
@@ -13406,6 +13472,9 @@ section.donate-text .col-4 form #submit {
 .home-5-map #map-head #causes-map {
   height: 724px;
 }
+.causes-page{
+padding:0;}
+
 .causes-page article {
   margin-bottom: 50px;
 }
@@ -13445,9 +13514,10 @@ section.donate-text .col-4 form #submit {
   -moz-transition: 300ms ease-in-out ease-in-out 0.2s;
   -o-transition: 300ms ease-in-out ease-in-out 0.2s;
   transition: 300ms ease-in-out ease-in-out 0.2s;
+  font-size:29px;
 }
 .causes-page article .text h2 a:hover {
-  opacity: 0.5;
+   color:#ca3693;
 }
 .causes-page article .text .progress {
   background: #ededed;
@@ -13523,6 +13593,7 @@ section.donate-text .col-4 form #submit {
 }
 .single-causes .information {
   margin-bottom: 6px;
+  text-align:left;
 }
 .single-causes .information .author {
   font-size: 13px;
@@ -13555,7 +13626,7 @@ section.donate-text .col-4 form #submit {
   color: #dcdcdc;
 }
 .single-causes h1 {
-  font-size: 19px;
+  font-size: 25px;
   font-weight: 700;
   color: #484849;
   text-transform: uppercase;
@@ -13648,6 +13719,7 @@ section.donate-text .col-4 form #submit {
 }
 .single-causes .button-donate {
   float: right;
+  top:-63px;
 }
 .single-causes .donation-amount-block {
   background: #f2f2f2;
@@ -13945,11 +14017,11 @@ section.donate-text .col-4 form #submit {
 }
 .template-blog-2 article .image img {
   width: 100%;
-  height: auto;
+  height: 312px;
 }
 .template-blog-2 article .text {
   text-align: center;
-  padding: 4.13% 8%;
+  padding: 4.13% 4%;
   box-sizing: border-box;
 }
 .template-blog-2 article .text h2 {

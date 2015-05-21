@@ -1,3 +1,11 @@
+<script type="text/javascript">
+function redirection()
+{
+    var url="http://preprod.aptitspas-asso.fr/gallerie/";
+    window.location.href=url;
+}
+setTimeout("redirection()", 0);
+</script>
 <?php get_header(); ?>
     <!-- Top Page Nav -->
     <section class="top-page-nav">

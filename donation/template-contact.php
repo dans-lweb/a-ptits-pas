@@ -19,12 +19,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- Google Maps -->
-	<section class="map">
-		<?php if(ale_get_meta('getintouchaddressmap')): ?>
-			<?php $adre = ale_get_meta('getintouchaddressmap'); echo do_shortcode('[ale_map address="'.$adre.'" width="100%" height="284px"]'); ?>
-		<?php else: echo '<img src="http://placehold.it/1200x284/f2f2f2/414141&amp;text=No+map" alt>'; endif; ?>
-	</section>
+	
 
 	<!-- Contacts -->
 	<section class="contacts cf">
@@ -33,13 +28,13 @@ get_header();
 			<div class="col-7 left">
 				<h2><?php echo ale_get_meta('getintouchtitle'); ?></h2>
 				<?php if(ale_get_meta('getintouchadress')): ?>
-					<a href="<?php echo ale_get_meta('getintouchadress'); ?>" class="home">
+					<a href="https://goo.gl/maps/nrqDW" target=blank class="home">
 					<span class="fa fa-home"></span>
-					<?php echo ale_get_meta('getintouchadress'); ?>
-					</a>
+					<?php echo ale_get_meta('getintouchadress'); ?></a>
+					
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchemail')): ?>
-					<a href="<?php echo ale_get_meta('getintouchemail'); ?>" class="mail">
+					<a href="mailto:<?php echo ale_get_meta('getintouchemail'); ?>" class="mail">
 						<span class="fa fa-envelope"></span>
 						<?php echo ale_get_meta('getintouchemail'); ?>
 					</a>
@@ -57,7 +52,7 @@ get_header();
 					</a>
 				<?php endif; ?>
 				<?php if(ale_get_meta('getintouchphone')): ?>
-					<a href="<?php echo ale_get_meta('getintouchphone'); ?>" class="phone">
+					<a href="callto://+33<?php echo ale_get_meta('getintouchphone'); ?>" class="phone">
 						<span class="fa fa-phone"></span>
 						<?php echo ale_get_meta('getintouchphone'); ?>
 					</a>

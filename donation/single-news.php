@@ -3,7 +3,7 @@
     <section class="top-page-nav">
         <div class="center cf">
 
-            <h2><?php _e('News', 'aletheme'); ?></h2>
+            <h2><?php _e('Blog', 'aletheme'); ?></h2>
 
             <?php echo get_breadcrumbs(); ?>
 

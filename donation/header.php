@@ -17,7 +17,7 @@
 
 			<div class="right">
 				<div class="block email">
-					<a href="#"> Contactez nous ! </a>
+					<a href="http://preprod.aptitspas-asso.fr/contact/"> Contactez nous ! </a>
 				</div>
 
 				<?php if(shortcode_exists('dgx-donate')): ?>
@@ -30,22 +30,7 @@
 					<?php include('searchform.php'); ?>
 				</div>
 			</div>
-			<div class="get-news-form">
-				<div class="exit">x</div>
-				<form action="<?php the_permalink();?>" method="post">
-					<?php if (isset($_GET['success'])) : ?>
-						<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
-					<?php endif; ?>
-					<?php if (isset($error) && isset($error['msg'])) : ?>
-						<p class="error"><?php echo $error['msg']?></p>
-					<?php endif; ?>
-					<input name="contact[name]" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" placeholder="<?php _e('Name', 'aletheme')?>" class="name" type="text" required="required"/>
-					<input name="contact[email]" value="<?php echo isset($_POST['contact']['email']) ? $_POST['contact']['email'] : ''?>" placeholder="<?php _e('E-mail', 'aletheme')?>" class="email" type="text" required="required"/>
-					<textarea name="contact[message]" placeholder="<?php _e('Message...', 'aletheme')?>" class="message" name="message" required="required"><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
-					<input id="submit" type="submit" value="<?php _e('Send', 'aletheme')?>"/>
-					<?php wp_nonce_field() ?>
-				</form>
-			</div>
+			
 
 			<div class="donate-form">
 				<div class="exit">x</div>

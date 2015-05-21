@@ -46,10 +46,10 @@ get_header(); ?>
 							<h2><?php the_title(); ?></h2>
 
 							<div class="string">
-								<?php echo ale_trim_excerpt(30); ?>
+								<?php the_excerpt(); ?>
 							</div>
 							
-							<a href="<?php the_permalink(); ?>"><?php _e('Lire la suite', 'aletheme'); ?></a>
+							<a class="suite" href="<?php the_permalink(); ?>"><?php _e('Lire la suite', 'aletheme'); ?></a>
 						</div>
 					</article>
 				<?php endwhile; ?>

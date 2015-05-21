@@ -15,7 +15,7 @@
                 }
                 ?>
                 <div class="col-6 haut_page"> <a href="#Haut">Haut de page</a></div>
-                <div class="copy">Tous droits réservés <a class="danslweb" href="http://www.dans-lweb.fr"> Il était une fois dans l'web </a></div>
+                <div class="copy">Tous droits réservés <a class="danslweb" href="http://www.dans-lweb.fr" target=blank> Il était une fois dans l'web </a></div>
             
             </div>
         </div>
@@ -53,7 +53,7 @@
                     <h3><?php echo ale_get_option('footercontacttitle'); ?></h3>
                     <div class="phone"><span class="fa fa-mobile"></span><?php echo ale_get_option('footercontacthone1'); ?><span> <?php echo ale_get_option('footercontacthone2'); ?></span></div>
                     
-                    <div class="email"><span class="fa fa-envelope-o"></span><?php echo ale_get_option('footercontactemail'); ?></div>
+                    <div class="email"><span class="fa fa-envelope-o"></span><a href="mailto:aptitspas@gmail.com">aptitspas@gmail.com </a></div>
 					<div class="adress">
                         <span class="fa fa-globe"></span>
                         <span><?php echo ale_get_option('footercontactaddress1'); ?></span><br>

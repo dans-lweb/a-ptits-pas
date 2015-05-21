@@ -19,8 +19,8 @@
 
                     <div class="contact-content">
 
-                        <h1 class="errorh1"><?php _e('Error, Page not found','aletheme'); ?></h1>
-                        <p class="errorh1"><?php _e('Sorry, but the page you\'re looking for has not found. Try checking the URL for errors, then hit the refresh<br /> button on your browser.','aletheme'); ?></p>
+                        <h1 class="errorh1"><?php _e('Erreur, page introuvable','aletheme'); ?></h1>
+                        <p class="errorh1"><?php _e('Désolé, mais la page que vous cherchez n\'existe pas. Verifiez l\'URL et raffraichissez la page. ','aletheme'); ?></p>
 
                     </div>
 
@@ -29,7 +29,7 @@
 
                     <div class="contact-footer">
                         <p class="errorh1">
-                            <a href="<?php echo home_url();?>" class="gohomebut"><?php _e('Return to the homepage','aletheme'); ?></a>
+                            <a href="<?php echo home_url();?>" class="gohomebut"><?php _e('Retour à l\'accueil','aletheme'); ?></a>
                         </p>
                     </div>
                 </article>

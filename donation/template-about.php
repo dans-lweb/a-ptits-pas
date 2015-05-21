@@ -33,21 +33,21 @@ get_header(); ?>
 		<section class="info i2">
 			<div class="center cf">
 				<div class="col-4 ">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_bebe.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_bebe.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle1'); ?></h3>
 						<p><?php echo ale_get_meta('infotext1'); ?></p>
 					</div>
 				</div>
 				<div class="col-4 ">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_famille.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_famille.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle2'); ?></h3>
 						<p><?php echo ale_get_meta('infotext2'); ?></p>
 					</div>
 				</div>
 				<div class="col-4 ">
-					<img class="icon_" src="http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/picto_plus.png">
+					<img class="icon_" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/picto_plus.png">
 					<div class="text">
 						<h3><?php echo ale_get_meta('infotitle3'); ?></h3>
 						<p><?php echo ale_get_meta('infotext3'); ?></p>
@@ -290,7 +290,11 @@ get_header(); ?>
 					<div class="col-4">
 						<h3><?php echo ale_get_meta('orgdettitle3'); ?></h3>
 						<p>
-							<?php echo ale_get_meta('orgdettext3'); ?>
+							<ul>
+								<li><a href="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/formulaire_don.pdf" target=blank>Formulaire de don </a></li>
+								<li><a href="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/formulaire_adhesion.pdf" target=blank>Formulaire d'adhésion </a></li>
+								<li><a href="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/droit_a_limage.pdf" target=blank>Formulaire de droit à l'image </a></li>
+							</ul>
 						</p>
 						<!--<a href="<?php echo ale_get_meta('orgdetlink3'); ?>"><?php _e('Read more','aletheme'); ?> ›</a>-->
 					</div>

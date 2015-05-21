@@ -48,14 +48,14 @@
 				<a href="<?php the_permalink();?>" class="title"><?php the_title();?></a>
 				<div class="cf">
 					<div class="info">
-						<div><span><?php _e('By:','aletheme'); ?></span> <?php the_author();?></div>
-						<div><span><?php _e('In:','aletheme'); ?></span> <?php the_category(', ');?></div>
-						<div><?php the_tags('<span>Tagged:</span> '); ?></div>
+						<div><span><?php _e('Par:','aletheme'); ?></span> <?php the_author();?></div>
+						<div><span><?php _e('Dans:','aletheme'); ?></span> <?php the_category(', ');?></div>
+						<div><?php the_tags('<span>Tag:</span> '); ?></div>
 					</div>
-					<div class="date"><?php the_time('M j, Y');?></div>
+					<div class="date"><?php the_time('j M Y');?></div>
 				</div>
 				<?php the_excerpt(); ?>
-				<a href="<?php the_permalink();?>"><?php _e('Read more','aletheme'); ?> ›</a>
+				<a href="<?php the_permalink();?>"><?php _e('Lire la suite','aletheme'); ?> ›</a>
 			</article>
 		<!-- -->
 			<div class="smalls grid-gutter cf">
@@ -81,12 +81,12 @@
 						</div>
 						<a href="<?php the_permalink();?>" class="title"><?php the_title();?></a>
 						<div class="info cf">
-							<div><span><?php _e('On:','aletheme'); ?></span> <?php the_time('M j, Y');?></div>
-							<div><span><?php _e('By:','aletheme'); ?></span> <?php the_author();?></div>
-							<div><span><?php _e('In:','aletheme'); ?></span> <?php the_category(', ');?></div>
+							<div><span><?php _e('Le:','aletheme'); ?></span> <?php the_time('j M Y');?></div>
+							<div><span><?php _e('Par:','aletheme'); ?></span> <?php the_author();?></div>
+							<div><span><?php _e('Dans:','aletheme'); ?></span> <?php the_category(', ');?></div>
 						</div>
 						<?php the_excerpt(); ?>
-						<a href="<?php the_permalink();?>"><?php _e('Read more','aletheme'); ?> ›</a>
+						<a href="<?php the_permalink();?>"><?php _e('Lire la suite','aletheme'); ?> ›</a>
 						<div class="line"></div>
 					</article>
 				<?php endif; ?>

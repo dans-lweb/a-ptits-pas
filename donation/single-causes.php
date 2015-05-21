@@ -13,7 +13,7 @@
 
 	<div class="center cf">
 		<!-- Blog -->
-		<div class="col-8 blog-page story single-causes">
+		<div class="col-10 blog-page story single-causes">
 			<?php  if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<!-- -->
 				<article>
@@ -88,7 +88,7 @@
 					if (($payments_enabled == "1") && (!empty($paypal_merchant_id)) && (!empty($currency_code))) {
 						$payment_status = ale_get_meta('payment_status', true, $post->ID);
 							?>
-							<span class="button-donate"><?php _e('Donner', 'aletheme'); ?></span>
+							<span class="button-donate" style="top:0px;"><?php _e('Donner', 'aletheme'); ?></span>
 							<div class="donation-amount-block clearfix <?php if(isset($payment_amount)&&!empty($payment_amount)){echo 'visible';} ?>">
 								<script src="<?php echo get_template_directory_uri() . "/js/libs/paypal-button.min.js?merchant=$paypal_merchant_id"; ?>"
 									<?php if ($enable_sandbox == "1"){ ?>
@@ -103,6 +103,7 @@
 									data-quantity="1"
 									data-name="<?php the_title(); ?>"
 									data-number="<?php echo $post->ID; ?>"
+									data-lc="fr_FR"
 									>
 								</script>
 							</div>
@@ -134,6 +135,28 @@
 				</article>
 			<?php endwhile; endif; wp_reset_query();?>
 			
+			<p style="margin-left:150px; margin-top:10px; font-size:20px; font-weight:bold"> Pour nous aider à financer ce projet</p>
+							<span class="button-donate"><?php _e('Donner', 'aletheme'); ?></span>
+							<div class="donation-amount-block clearfix <?php if(isset($payment_amount)&&!empty($payment_amount)){echo 'visible';} ?>">
+								<script src="<?php echo get_template_directory_uri() . "/js/libs/paypal-button.min.js?merchant=$paypal_merchant_id"; ?>"
+									<?php if ($enable_sandbox == "1"){ ?>
+									data-env="sandbox"
+									<?php } ?>
+									data-button="donate"
+									data-callback="<?php echo get_template_directory_uri() . "/aletheme/paypal/ipn.php"; ?>"
+									data-tax="0"
+									data-shipping="0"
+									data-currency="<?php echo $currency_code; ?>"
+									data-amount-editable="<?php echo $payment_amount; ?>"
+									data-quantity="1"
+									data-name="<?php the_title(); ?>"
+									data-number="<?php echo $post->ID; ?>"
+									data-lc="fr_FR"
+									>
+								</script>
+							</div>
+						
+					
 			<div class="assign-volountears">
 				<h3><?php echo ale_get_option('causesvolountearstitle'); ?></h3>
 				<p><?php echo ale_get_option('causesvolountearstext'); ?></p>
@@ -165,12 +188,12 @@
 								<h3><?php the_title(); ?></h3>
 								<p><?php echo ale_get_meta('volountearsaddress'); ?></p>
 							</div>
-							<a href="<?php the_permalink(); ?>"><?php _e('Read more', 'aletheme'); ?></a>
+							<a href="<?php the_permalink(); ?>"><?php _e('Lire la suite', 'aletheme'); ?></a>
 						</article>
 					<?php endwhile; endif; wp_reset_query();?>
 				</div>
 			</div>
 		</div>
-		<?php get_sidebar(); ?>
+		<?php comments_template();?>
 	</div>
 <?php get_footer(); ?>

@@ -13,8 +13,13 @@
     <div class="center cf">
 
         <!-- Gallery -->
-        <section class="col-8 blog-page cf">
-
+        <section class="col-12 blog-page cf">
+		
+				<?php  if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php the_content();?>
+                    <?php wp_link_pages(); ?>
+                <?php endwhile; endif; ?>
+				
             <div class="gallery">
 
                 <div class="photos cf inside-photo">
@@ -36,7 +41,7 @@
                     $attachments = get_posts( $args );
                     if ( $attachments ) {
                         foreach ( $attachments as $attachment ) { ?>
-                            <div class="col-6">
+                            <div class="col-4">
                                 <a href="<?php echo $attachment->guid; ?>" data-lightbox="<?php echo $attachment->guid; ?>">
                                     <?php if(wp_get_attachment_image( $attachment->ID, 'gallery-thumba' )): ?>
                                         <?php echo wp_get_attachment_image( $attachment->ID, 'gallery-thumba' ); ?>
@@ -54,17 +59,13 @@
 						}
 					} ?>
                 </div>
-                <?php  if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <?php the_content();?>
-                    <?php wp_link_pages(); ?>
-                <?php endwhile; endif; ?>
-
+            
             </div>
 
 
         </section>
 
-        <?php get_sidebar(); ?>
+        
 
     </div>
 <?php get_footer(); ?>
