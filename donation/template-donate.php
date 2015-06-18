@@ -130,7 +130,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal1'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -164,7 +164,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal2'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -198,7 +198,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal3'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -232,7 +232,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal4'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -266,7 +266,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal5'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>
@@ -300,7 +300,7 @@ get_header(); ?>
 							<div class="col-4">
 								<div class="back">
 									<h4><?php echo ale_get_meta('donategoal6'); ?></h4>
-									<p><?php _e('But','aletheme'); ?></p>
+									<p><?php _e('Objectif','aletheme'); ?></p>
 								</div>
 							</div>
 						</div>

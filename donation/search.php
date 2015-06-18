@@ -105,7 +105,8 @@
                         </article>
                     <?php endif; ?>
                 <?php endwhile;  else: ?>
-                    <?php ale_part('notfound')?>
+                    <!-- // <?php ale_part('notfound')?> -->
+                    <p> Aucun r&eacutesultat trouv&eacute pour la recherche </p>
                 <?php endif; wp_reset_query();?>
             </div>
             <?php echo ale_page_links(); ?>

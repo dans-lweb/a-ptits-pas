@@ -12,3 +12,57 @@ Tags:               dark, light, white, black, gray, one-column, two-columns, le
 .sticky {}
 .bypostauthor {}
 .gallery-caption {}
+
+footer .footer .social {
+    margin-bottom: 25px;
+    margin-top:0px;
+}
+
+body {
+    font-family: Ubuntu
+}
+
+section.cause .causes h3 i{
+    text-transform:lowercase;
+    font-weight:normal;
+}
+
+.partenaires {
+    height: 400px;
+}
+
+.quote {
+    text-align: left; 
+    font-style: italic;
+    margin-top: 7%; 
+    font-size: 25px;
+}
+
+.ref {
+    text-align:right;
+    font-size:15px; 
+    margin-top:3%;
+}
+
+@media (max-width: 850px) {
+
+.partenaires {
+    height: 275px;
+    margin-top: 19px;
+}
+
+.quote {
+    font-size: 17px;
+}
+
+.ref {
+    font-size:10px; 
+}
+}
+
+@media (max-width: 550px) {
+
+.quote {
+    font-size:13px;
+}
+}

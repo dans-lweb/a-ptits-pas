@@ -2419,9 +2419,9 @@ function aletheme_metaboxes($meta_boxes) {
 		)
 	);
 
-	$meta_boxes[] = array(
+	/*$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Option de gallerie',
+		'title'      => 'Option de galerie',
 		'pages'      => array( 'gallery', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -2429,7 +2429,7 @@ function aletheme_metaboxes($meta_boxes) {
 		'fields' => array(
 			array(
 				'name' => 'Ajouter au slider',
-				'desc' => 'Sectionner ajouter pour ajouter la gallerie au slider',
+				'desc' => 'Sectionner ajouter pour ajouter la galerie au slider',
 				'id'   => $prefix . 'galleryslider',
 				'std'  => '',
 				'type'    => 'select',
@@ -2439,7 +2439,7 @@ function aletheme_metaboxes($meta_boxes) {
 				),
 			),
 		)
-	);
+	);*/
 
 	$meta_boxes[] = array(
 		'id'         => 'contact_metabox',
@@ -3870,8 +3870,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №1',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №1',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal1',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -3911,8 +3911,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №2',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №2',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal2',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -3952,8 +3952,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №3',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №3',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal3',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -3993,8 +3993,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №4',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №4',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal4',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -4034,8 +4034,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №5',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №5',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal5',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -4075,8 +4075,8 @@ function aletheme_metaboxes($meta_boxes) {
 				'type' => 'text',
 			),
 			array(
-				'name' => 'But №6',
-				'desc' => 'Inserer le but à atteindre Exemple: 2,500€',
+				'name' => 'Objectif №6',
+				'desc' => 'Inserer l\'objectif à atteindre Exemple: 2,500€',
 				'id'   => $prefix . 'donategoal6',
 				'std'  => '2,500€',
 				'type' => 'text',
@@ -4139,7 +4139,7 @@ function aletheme_metaboxes($meta_boxes) {
 		'show_names' => true, // Show field names on the left
 		'fields' => array(
 			array(
-				'name' => 'But',
+				'name' => 'Objectif',
 				'desc' => 'Montant requis. Exemple: 2500',
 				'id'   => $prefix . 'causesgoal',
 				'std'  => '',
@@ -4239,7 +4239,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Options de Gallerie',
+		'title'      => 'Options de Galerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -4258,7 +4258,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Options de Gallerie',
+		'title'      => 'Options de Galerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -4277,7 +4277,7 @@ function aletheme_metaboxes($meta_boxes) {
 
 	$meta_boxes[] = array(
 		'id'         => 'gallery_metabox',
-		'title'      => 'Options de Gallerie',
+		'title'      => 'Options de Galerie',
 		'pages'      => array( 'page', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
@@ -4678,13 +4678,13 @@ function aletheme_get_post_types() {
 				),
 				'show_in_nav_menus'=> true,
 			),
-			'singular' => 'Gallerie',
-			'multiple' => 'Galleries',
+			'singular' => 'Galerie',
+			'multiple' => 'Galeries',
 			'columns'    => array(
 				'first_image',
 			)
 		),
-		'events' => array(
+		/*'events' => array(
 			'config' => array(
 				'public' => true,
 				'menu_position' => 21,
@@ -4703,7 +4703,7 @@ function aletheme_get_post_types() {
 			'columns'    => array(
 				'first_image',
 			),
-		),
+		),*/
 		'news' => array(
 			'config' => array(
 				'public' => true,
@@ -4724,7 +4724,7 @@ function aletheme_get_post_types() {
 				'first_image',
 			)
 		),
-		'volountears' => array(
+		/*'volountears' => array(
 			'config' => array(
 				'public' => true,
 				'menu_position' => 22,
@@ -4743,7 +4743,7 @@ function aletheme_get_post_types() {
 			'columns'    => array(
 				'first_image',
 			)
-		),
+		),*/
 		'causes' => array(
 			'config' => array(
 				'public' => true,
@@ -4764,7 +4764,7 @@ function aletheme_get_post_types() {
 				'first_image',
 			)
 		),
-		'team' => array(
+		/*'team' => array(
 			'config' => array(
 				'public' => true,
 				'menu_position' => 22,
@@ -4783,7 +4783,7 @@ function aletheme_get_post_types() {
 			'columns'    => array(
 				'first_image',
 			)
-		),
+		),*/
 	);
 }
 
@@ -4802,8 +4802,8 @@ function aletheme_get_taxonomies() {
 				'args'        => array('orderby' => 'term_order'),
 				'hierarchical' => true,
 			),
-			'singular'    => 'Gallerie Category',
-			'multiple'    => 'Gallerie Categories',
+			'singular'    => 'Galerie Category',
+			'multiple'    => 'Galerie Categories',
 		),
 
 		'events-category'    => array(

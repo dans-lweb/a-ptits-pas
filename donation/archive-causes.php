@@ -75,7 +75,7 @@
 							<?php if(ale_get_meta('causesgoal')): ?>
 								<div class="item">
 									<span class="value"><?php echo  ale_get_meta('causesgoal'). ' '. ale_get_option('currencycurrent'); ?></span>
-									<span class="description"><?php _e('But', 'aletheme'); ?></span>
+									<span class="description"><?php _e('Objectif', 'aletheme'); ?></span>
 								</div>
 							<?php endif; ?>
 						</div>

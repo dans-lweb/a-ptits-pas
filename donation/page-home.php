@@ -134,27 +134,22 @@ get_header(); ?>
 	
 	<section class="partenaires">
 		<div class="center cf">
-			<h2>Nos partenaires</h2>
-			<div >
-				<div class="col-2i">
-					<div class="partner-logo">
-						<a  target=blank href="http://www.sosprema.com"><img class="sosprema" alt="sosprema" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-sosprema.png"></a>
-					</div>
-				</div>
-				<div class="col-2i">
-					<div class="partner-logo">
-						<a  target=blank href="http://www.lactalis.fr"><img class="lactalis"alt="lactalis" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-lactalis.png"></a>
-					</div>
-				</div>
-				
-			</div>
+			
+			<blockquote class="quote">"Soigner. Donner des soins, c'est aussi une politique.
+ 				Cela peut être fait avec une rigueur dont la douceur est l’enveloppe essentielle. Une attention exquise à la vie que l'on veille et surveille. Une précision constante.Une 
+				sorte d'élégance dans les actes, une présence et une légèreté, une prévision et une sorte de perception très éveillée qui observe les moindres signes. C'est une sorte 	d'oeuvre, de poème (et qui n'a jamais été écrit), que la sollicitude intelligente compose."
+			
+			</blockquote>
+
+      			<p class="ref"> <strong style="font-weight:bold;">Paul Valéry</strong>, <i>Œuvres </i>, tome 1, 1957, <i>Politique organo-psychique.			</i></p>
+  			
 		</div>
 	</section>
 	
 	<?php if(ale_get_meta('howhelphome')!='off'): ?>
 		<!-- How can you help -->
 		<section class="how-help">
-			<div class="top-border"></div>
+			
 
 			<div class="center cf">
 				<h2><img alt="aptitpas" src="http://preprod.aptitspas-asso.fr/wp-content/themes/donation/css/images/logo-blanc.png"><?php echo ale_get_meta('howhelptitle'); ?></h2>

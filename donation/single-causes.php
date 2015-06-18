@@ -56,27 +56,27 @@
 					</div>
 
 					<div class="donation-result clearfix">
-						<?php if(ale_get_meta('causesdonated')): ?>
-							<div class="item">
-								<span class="value"><?php echo ale_get_meta('causesdonated'); ?></span>
-								<span class="description"><?php _e('Dons', 'aletheme'); ?></span>
-							</div>
-						<?php endif; ?>
+							<?php if(ale_get_meta('causesdonated')): ?>
+								<div class="item">
+									<span class="value"><?php echo ale_get_meta('causesdonated'); ?></span>
+									<span class="description"><?php _e('Acquis', 'aletheme'); ?></span>
+								</div>
+							<?php endif; ?>
 
-						<?php if(ale_get_meta('causesdonors')): ?>
-							<div class="item donors">
-								<span class="value"><?php echo ale_get_meta('causesdonors'); ?></span>
-								<span class="description"><?php _e('Donneurs', 'aletheme'); ?></span>
-							</div>
-						<?php endif; ?>
+							<?php if(ale_get_meta('causesdonors')): ?>
+								<div class="item donors">
+									<span class="value"><?php echo ale_get_meta('causesdonors'); ?></span>
+									<span class="description"><?php _e('Donateurs', 'aletheme'); ?></span>
+								</div>
+							<?php endif; ?>
 
-						<?php if(ale_get_meta('causesgoal')): ?>
-							<div class="item">
-								<span class="value"><?php echo ale_get_option('causesgoal') . ' '. ale_get_meta('currencycurrent'); ?></span>
-								<span class="description"><?php _e('But', 'aletheme'); ?></span>
-							</div>
-						<?php endif; ?>
-					</div>
+							<?php if(ale_get_meta('causesgoal')): ?>
+								<div class="item">
+									<span class="value"><?php echo  ale_get_meta('causesgoal'). ' '. ale_get_option('currencycurrent'); ?></span>
+									<span class="description"><?php _e('Objectif', 'aletheme'); ?></span>
+								</div>
+							<?php endif; ?>
+						</div>
 
 					<?php
 					//PayPal

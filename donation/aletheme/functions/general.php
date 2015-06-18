@@ -1253,12 +1253,12 @@ function ale_trim_excerpt($length) {
 
 function get_breadcrumbs() {
 
-	$text['home']     = __('Home','aletheme');
+	$text['home']     = __('Accueil','aletheme');
 	$text['category'] = __('Archive','aletheme').' "%s"';
-	$text['search']   = __('Search results','aletheme').' "%s"';
+	$text['search']   = __('Résultat de recherche','aletheme').' "%s"';
 	$text['tag']      = __('Tag','aletheme').' "%s"';
-	$text['author']   = __('Author','aletheme').' %s';
-	$text['404']      = __('Error 404','aletheme');
+	$text['author']   = __('Auteur','aletheme').' %s';
+	$text['404']      = __('Erreur 404','aletheme');
 
 	$show_current   = 1;
 	$show_on_home   = 0;
@@ -1842,8 +1842,8 @@ if( !function_exists( 'ale_register_causes_payments_page' ) ){
 	function ale_register_causes_payments_page(){
 		add_submenu_page(
 			'edit.php?post_type=causes'
-			, __('PayPal Payments','aletheme')
-			, __('PayPal Payments','aletheme')
+			, __('Versements PayPal','aletheme')
+			, __('Versements Payments','aletheme')
 			, 'manage_options'
 			, 'causes-payments'
 			, 'ale_display_causes_payments'
@@ -1861,15 +1861,15 @@ if( !function_exists( 'ale_display_causes_payments' ) ){
 		<table id="payments-table" cellpadding="10px">
 			<tr>
 				<th><?php _e('ID','aletheme');?></th>
-				<th><?php _e('Payment Date','aletheme');?></th>
-				<th><?php _e('First Name','aletheme');?></th>
-				<th><?php _e('Last Name','aletheme');?></th>
-				<th><?php _e('Payer Email','aletheme');?></th>
-				<th><?php _e('Payment Status','aletheme');?></th>
-				<th><?php _e('Amount','aletheme');?></th>
-				<th><?php _e('Currency','aletheme');?></th>
-				<th><?php _e('Property ID','aletheme');?></th>
-				<th><?php _e('Property Status','aletheme');?></th>
+				<th><?php _e('Date','aletheme');?></th>
+				<th><?php _e('Prenom','aletheme');?></th>
+				<th><?php _e('Nom','aletheme');?></th>
+				<th><?php _e('Email','aletheme');?></th>
+				<th><?php _e('Statut du paiement','aletheme');?></th>
+				<th><?php _e('Montant','aletheme');?></th>
+				<th><?php _e('Monnaie','aletheme');?></th>
+				<th><?php _e('ID de propriété','aletheme');?></th>
+				<th><?php _e('Statut de propriété','aletheme');?></th>
 				<th><?php _e('Action','aletheme');?></th>
 			</tr>
 			<?php
@@ -1884,7 +1884,7 @@ if( !function_exists( 'ale_display_causes_payments' ) ){
 				'meta_query' => array(
 					array(
 						'key' => 'ale_payment_status',
-						'value' => 'Completed'
+						'value' => 'Finalisé'
 					)
 				)
 			);
@@ -1897,7 +1897,7 @@ if( !function_exists( 'ale_display_causes_payments' ) ){
 					$paid_causes_query->the_post();
 					global $post;
 					$values = get_post_custom( $post->ID );
-					$not_available  = __('Not Available','framework');
+					$not_available  = __('Non disponible','framework');
 
 					$txn_id         = isset( $values['ale_txn_id'] ) ? esc_attr( $values['ale_txn_id'][0] ) : $not_available;
 					$payment_date   = isset( $values['ale_payment_date'] ) ? esc_attr( $values['ale_payment_date'][0] ) : $not_available;
@@ -1919,7 +1919,7 @@ if( !function_exists( 'ale_display_causes_payments' ) ){
 						<td><?php echo $payment_currency; ?></td>
 						<td><?php echo $post->ID; ?></td>
 						<td><?php echo $post->post_status; ?></td>
-						<td><a href="<?php echo get_edit_post_link( $post->ID ); ?>"><?php _e('Edit Cause','aletheme'); ?></a></td>
+						<td><a href="<?php echo get_edit_post_link( $post->ID ); ?>"><?php _e('Editer le projet','aletheme'); ?></a></td>
 					</tr>
 				<?php
 				}
@@ -1927,7 +1927,7 @@ if( !function_exists( 'ale_display_causes_payments' ) ){
 			}else{
 				?>
 				<tr>
-					<td colspan="11"><?php _e('No Completed Payments.','aletheme'); ?></td>
+					<td colspan="11"><?php _e('Pas de paiement finalisé','aletheme'); ?></td>
 				</tr>
 			<?php
 			}

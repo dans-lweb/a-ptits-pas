@@ -295,9 +295,9 @@ a {
  
  .suite{
  background: #ca3693 none repeat scroll 0 0;
-
+  font-family:Ubuntu;
     border-radius: 25px;
-    color: #ffffff;
+    color: #ffffff !important;
     display: inline-block;
     font-size: 13px;
     font-weight: 700;
@@ -5965,7 +5965,7 @@ header.main #mobile-menu ul ul li a {
   line-height: 40px;
   position: absolute;
   bottom: 41px;
-  font-size: 23px;
+  font-size: 20px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.4);
   text-align: center;
@@ -6570,10 +6570,11 @@ section.how-help .item {
 }
 
 .howhelplink{
-padding-left:45px;}
+padding-left:45px;
+font-family:Ubuntu;}
 
 .howhelplink:hover{
-background-image:url('http://localhost/aptitspas/wordpress/wp-content/themes/donation/css/images/bullet.png');
+background-image:url("../css/images/bullet.png");
 background-repeat:no-repeat;
 background-size:contain;
 }
@@ -7237,7 +7238,7 @@ section.top-page-nav {
 }
 section.top-page-nav h2 {
   font-weight: 400;
-  font-size: 46px;
+  font-size: 36px !important;
   color: #ffffff;
   text-transform: none;
   margin: 0;
@@ -13758,6 +13759,7 @@ padding:0;}
 }
 .single-causes .donation-amount-block button {
   float: left;
+  top:36px;
 }
 .single-causes .hr {
   width: 100%;
@@ -14058,6 +14060,7 @@ padding:0;}
   -moz-transition: all 300ms ease-in-out ease-in-out 0.2s;
   -o-transition: all 300ms ease-in-out ease-in-out 0.2s;
   transition: all 300ms ease-in-out ease-in-out 0.2s;
+
 }
 .template-blog-2 article .text a:hover {
   -webkit-box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -15375,6 +15378,7 @@ padding:0;}
   -moz-transition: all 300ms ease-in-out ease-in-out 0.2s;
   -o-transition: all 300ms ease-in-out ease-in-out 0.2s;
   transition: all 300ms ease-in-out ease-in-out 0.2s;
+  font-family:Ubuntu;
 }
 .button .shadow {
   position: absolute;

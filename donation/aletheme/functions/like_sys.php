@@ -82,10 +82,10 @@ function getPostLikeLink($post_id)
 
     $output = '<p class="post-like">';
     if(hasAlreadyVoted($post_id))
-        $output .= ' <span title="I like this article" class="qtip like alreadyvoted"></span>';
+        $output .= ' <span title="J\'aime cet article" class="qtip like alreadyvoted"></span>';
     else
         $output .= '<a href="#" data-post_id="'.$post_id.'">
-					<span  title="I like this article" class="qtip like"></span>
+					<span  title="J\'aime cet article class="qtip like"></span>
 				</a>';
     $output .= '<span class="count">'.$vote_count.'</span></p>';
 

@@ -13,7 +13,7 @@ function ale_attachment_fields_to_edit($form_fields, $post) {
 	$form_fields["hide_from_gallery"] = array(
 		"label" => __("Hide", 'aletheme'),
 		"input" => "html",
-		'html'	=> "<label><input type='checkbox' value='1' {$checked} name='attachments[{$post->ID}][hide_from_gallery]' id='attachments[{$post->ID}][hide_from_gallery]' /> Don't display image in gallery.</label>",
+		'html'	=> "<label><input type='checkbox' value='1' {$checked} name='attachments[{$post->ID}][hide_from_gallery]' id='attachments[{$post->ID}][hide_from_gallery]' /> Ne pas montrer l\'image dans la galerie.</label>",
 		"value" => $val,
 	);
 		
@@ -153,7 +153,7 @@ function ale_gallery_metabox_add() {
 		}
 		
 		if( apply_filters( 'ale_gallery_metabox_limit', true, $post_id ) ) {
-			add_meta_box( 'ale_gallery_metabox', __( 'Gallery Images', 'gallery-metabox' ), 'ale_gallery_metabox', $post_type, $context, $priority );
+			add_meta_box( 'ale_gallery_metabox', __( 'Images de galerie', 'gallery-metabox' ), 'ale_gallery_metabox', $post_type, $context, $priority );
 		}
 	}
 }
@@ -198,14 +198,14 @@ function ale_gallery_metabox_html($post_id) {
 	$args = apply_filters( 'ale_gallery_metabox_args', $args );
 	$return = '';
 
-    $intro = '<p><a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;TB_iframe=1&amp;width=640&amp;height=715" id="add_image" class="thickbox" title="' . __( 'Add Image', 'aletheme' ) . '">' . __( 'Upload Images', 'aletheme' ) . '</a> | <a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;tab=gallery&amp;TB_iframe=1&amp;width=640&amp;height=715" id="manage_gallery" class="thickbox" title="' . __( 'Manage Gallery', 'aletheme' ) . '">' . __( 'Manage Gallery', 'aletheme' ) . '</a></p>
-	<p><b style="color:#990000;">To remove the image from gallery, delete it permanently or check the options "Don\'t display image in gallery." in image properties</b></p>
+    $intro = '<p><a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;TB_iframe=1&amp;width=640&amp;height=715" id="add_image" class="thickbox" title="' . __( 'Ajout Image', 'aletheme' ) . '">' . __( 'Upload Images', 'aletheme' ) . '</a> | <a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;tab=gallery&amp;TB_iframe=1&amp;width=640&amp;height=715" id="manage_gallery" class="thickbox" title="' . __( 'Gerer la galerie', 'aletheme' ) . '">' . __( 'Gerer la galerie', 'aletheme' ) . '</a></p>
+	<p><b style="color:#990000;"> Pour supprimer une image de la galerie, effacez la de mani&egravere permanente ou cochez la case "ne pas montrer dans la galerie" dans les propri&eacutet&eacutes d\'image</b></p>
 	';
     $return .= apply_filters( 'ale_gallery_metabox_intro', $intro);
 
     $loop = get_posts($args);
     if (empty($loop)) {
-        return '<p>Gallery is empty. You must upload new images. You are not able to use old images uploaded from Media Library. <b style="color:#990000;">After uploading close the modal window, don\'t insert images into post.</b></p><a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;TB_iframe=1&amp;width=640&amp;height=715" id="add_image" class="thickbox" title="' . __( 'Add Image', 'aletheme' ) . '">' . __( 'Upload Images', 'aletheme' ) . '</a>';
+        return '<p>La galerie est vide. Vous devez charger des nouvelles images. Vous ne pouvez pas utilisez des images deja charg&eacutee dans la bibliotheque de media. <b style="color:#990000;">Apr&egraves avoir charg&eacute, fermez la fenetre, N\'INSEREZ PAS D\'IMAGE DANS LE POST.</b></p><a href="media-upload.php?post_id=' . $post_id .'&amp;type=image&amp;TB_iframe=1&amp;width=640&amp;height=715" id="add_image" class="thickbox" title="' . __( 'Add Image', 'aletheme' ) . '">' . __( 'Upload Images', 'aletheme' ) . '</a>';
     }
 	
 	foreach ($loop as $image) {

@@ -2,6 +2,7 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
+<!--[if lt IE 8]> <p style="font-size:25px; text-align:center;"> Votre navigateur est d&eacutepass&eacute et le site risque de ne pas s'afficher correctement. <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie-MCM?FORM=MI09J9&OCID=MI09J9&WT.mc_id=MSCOM_EN_US_DLC_4PF_141B2ENUS51787" target=blank>Veuillez mettre &agrave jour votre navigateur </a></p><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
